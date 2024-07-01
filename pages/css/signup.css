@@ -34,10 +34,7 @@
     gap: 15px;
     border-radius: 5px;
     padding: 15px 20px;
-    position: absolute;
     min-width: 300px;
-    top: -15px;
-    left: calc(100% + 15px);
     opacity: 0;
     animation: 200ms ease 0s 1 normal none running fadeLeft;
     animation-fill-mode: forwards;
@@ -95,7 +92,7 @@
     width: 20px;
     min-width: 20px;
     height: 20px;
-    border-radius: 2px;
+    border-radius: 3px;
     background-color: #ebebeb;
     margin-right: 10px;
     cursor: pointer;
@@ -231,7 +228,6 @@
     font-weight: 400;
     color: var(--red);
     font-size: 14px;
-    margin-bottom: 20px;
   }
   
   .signup-input-small {
@@ -323,6 +319,7 @@
     text-align: center;
     border: 1px #ebebeb solid;
     cursor: pointer;
+    margin-top: 20px;
     color: #333;
     font-family: Inter;
     margin-bottom: 10px;
@@ -529,11 +526,8 @@
     padding-bottom: 20px;
   }
 
-  .cg-info {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding-bottom: 25px;
+  .login-element {
+    padding: 20px 0px;
   }
 
   .cg-h1 {
@@ -644,8 +638,6 @@
   .cg-form {
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
   }
 
@@ -653,19 +645,53 @@
     width: 100%;
   }
 
-  .cg-input {
-    border: 0px;
-    border-bottom: 1.5px solid var(--stageSurface);
-    padding: 12px 5px;
-    width: 100%;
+  .cg-smallinput {
+    width: 33%;
+    height: 100%;
     font-family: Inter;
-    font-weight: 400;
+    font-weight: 300;
     color: #333;
-    font-size: 15px;
+    font-size: 16px;
     outline: none;
     transition: 0.2s;
-    border-radius: 0px;
-    margin-bottom: 20px;
+    padding: 0px 15px;
+    border: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(195, 195, 195);
+  }
+
+  .cg-smallinput:focus {
+    border-color: var(--primary) !important;
+  }
+
+  .cg-input {
+    border: 0px;
+    overflow: hidden;
+    padding: 0px 15px;
+    height: 50px;
+    background-color: var(--surface);
+    width: 100%;
+    font-family: Inter;
+    font-weight: 300;
+    color: #333;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s;
+    border-bottom: 1px solid rgb(195, 195, 195);
+  }
+
+  .cg-input:focus {
+    border-color: var(--primary) !important;
+  }
+
+  .cg-inputblocktop {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+
+  .cg-inputblockbottom {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
   }
 
   .cg-btn {
@@ -685,10 +711,6 @@
   .cg-btn:hover {
     color: #fff !important;
     background-color: var(--primary) !important;
-  }
-
-  .cg-input:focus {
-    border-color: #333 !important;
   }
 
   .cg-h2 {
@@ -739,7 +761,7 @@
     color: var(--softBlack);
     font-size: 13px;
     font-weight: 400;
-    margin-top: 5px;
+    margin-top: 20px;
   }
   
   .login-link {

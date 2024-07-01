@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Head from 'next/head'
-import Header from './layout/header';
+import Header from './layout/header.tsx';
 import Spacer from './components/spacer';
  
 function Privat () {
@@ -8,24 +8,24 @@ function Privat () {
     return (
         <>
             <Head>
-                <title>Privatlivspolitik - Tipsspillet</title>
-                <link rel="canonical" href="https://www.tipsspillet.dk/privatliv" />
-                <meta name="description" content="Følgende af Tipsspillets privatlivspolitik er gældende i forbindelse med anvendelsen af Tipsspillet. Ved brug af internetsiden anerkender og tiltræder du vores privatlivspolitik." />
+                <title>Privatlivspolitik - Fantasybetting</title>
+                <link rel="canonical" href="https://www.Fantasybetting.dk/privatliv" />
+                <meta name="description" content="Følgende af Fantasybettings privatlivspolitik er gældende i forbindelse med anvendelsen af Fantasybetting. Ved brug af internetsiden anerkender og tiltræder du vores privatlivspolitik." />
                 <meta name="author" content="Mads Kaiser" />
-                <meta name="keywords" content="tipsspillet privatliv,privatlivspolitik,privatlivsbetingelser,privatlivs betingelser,privatlivs politik,betingelser" />
-                <meta itemProp="name" content="Tipsspillet Privatlivspolitik" />
-                <meta itemProp="description" content="Følgende af Tipsspillets privatlivspolitik er gældende i forbindelse med anvendelsen af Tipsspillet. Ved brug af internetsiden anerkender og tiltræder du vores privatlivspolitik." />
-                <meta property="og:title" content="Privatlivspolitik - Tipsspillet" />
-                <meta property="og:url" content="https://www.tipsspillet.dk/privatliv" />
-                <meta property="og:description" content="Følgende af Tipsspillets privatlivspolitik er gældende i forbindelse med anvendelsen af Tipsspillet. Ved brug af internetsiden anerkender og tiltræder du vores privatlivspolitik." />
+                <meta name="keywords" content="Fantasybetting privatliv,privatlivspolitik,privatlivsbetingelser,privatlivs betingelser,privatlivs politik,betingelser" />
+                <meta itemProp="name" content="Fantasybetting Privatlivspolitik" />
+                <meta itemProp="description" content="Følgende af Fantasybettings privatlivspolitik er gældende i forbindelse med anvendelsen af Fantasybetting. Ved brug af internetsiden anerkender og tiltræder du vores privatlivspolitik." />
+                <meta property="og:title" content="Privatlivspolitik - Fantasybetting" />
+                <meta property="og:url" content="https://www.Fantasybetting.dk/privatliv" />
+                <meta property="og:description" content="Følgende af Fantasybettings privatlivspolitik er gældende i forbindelse med anvendelsen af Fantasybetting. Ved brug af internetsiden anerkender og tiltræder du vores privatlivspolitik." />
             </Head>
             <Header />
             <Spacer />
             <div className="law-main-container">
                 <div className="betingelser-container">
-                <h1 className="betingelser-h1">Tipsspillet Privatlivspolitik</h1>
+                <h1 className="betingelser-h1">Fantasybetting Privatlivspolitik</h1>
                 <p className="betingelser-h2">Sidst opdateret 24. maj, 2022</p>
-                <p className="betingelser-p">Velkommen til Tipsspillet</p>
+                <p className="betingelser-p">Velkommen til Fantasybetting</p>
                 <h2 className="betingelser-p">Følgende politik er gældende i forbindelse med anvendelsen af internetsiden. Ved at gå ind på denne internetside anerkender og tiltræder du følgende privatlivspolitik. Såfremt du ikke kan acceptere disse vilkår, skal du ikke benytte denne internetside</h2>
                 <div className="betingelser-section">
                     <h2 className="betingelser-h3">Sektion A - Cookie og privatliv</h2>

@@ -4,7 +4,6 @@ import axios from "axios";
 import { getKupon, getString } from "../../services/algo.js";
 import Link from 'next/link'
 import Head from 'next/head'
-import StageHeader from '../../layout/stageheader';
 import Height from '../../components/height';
 import Back from "../../components/back.js";
  
@@ -49,10 +48,9 @@ function StageSpiller ({ data }) {
     return (
         <>
             <Head>
-                <title>Spiller - Tipsspillet</title>
+                <title>Spiller - Fantasybetting</title>
                 <meta name="robots" content="noindex" />
             </Head>
-            <StageHeader />
             <Height />
             <div className="stage-main-article-container">
                 <Back />

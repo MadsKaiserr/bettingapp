@@ -1,0 +1,345 @@
+.ansvarWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 6px 7%;
+    background-color: #e3e5ec;
+    z-index: 13;
+}
+
+.ansvarNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ansvarA {
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--secondary);
+    transition: 0.2s;
+}
+
+.ansvarA:hover {
+    color: #111;
+    text-decoration: underline;
+}
+
+.ansvarP {
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--secondary);
+    transition: 0.2s;
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.logoP {
+    font-size: 21px;
+    color: var(--secondary);
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-family: ZonaSemi;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #222;
+}
+
+.navWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.navigation__nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.stageNav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.stageP {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--softBlack);
+    padding: 15px;
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.konto {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.kontoGruppespil {
+    font-size: 14px;
+    color: var(--secondary);
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 7px 15px;
+    box-shadow: -0.4px 0.8px 1px 1px rgba(0,0,0,0.1);
+}
+
+.kontoNone {
+    font-size: 14px;
+    color: var(--secondary);
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 7px 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.kontoIcon {
+    width: 16px;
+    height: 16px;
+    filL: var(--secondary);
+}
+
+.kontoPenge {
+    font-size: 14px;
+    color: var(--secondary);
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 7px 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: -0.4px 0.8px 1px 1px rgba(0,0,0,0.1);
+}
+
+.settingElement {
+    display: flex;
+    padding: 8px 12px;
+    border-radius: 500px;
+    transition: 0.2s;
+    cursor: pointer;
+    align-items: center;
+    gap: 7px;
+}
+
+.settingElement:hover {
+    background-color: var(--stageSurface);
+}
+
+.settingImg {
+    position: relative;
+    width: 16px;
+    opacity: 0.9;
+    height: 16px;
+}
+
+.settingIcon {
+    width: 18px;
+    height: 18px;
+    fill: var(--softBlack);
+}
+
+.settingP {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--softBlack);
+}
+
+.stagePActive {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+    padding: 15px;
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.stageP:hover {
+    background-color: var(--surface);
+}
+
+.stageWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: calc(110.5%);
+    margin-left: -5%;
+    align-items: center;
+}
+
+.navContainer {
+    padding: 0px 7%;
+    display: flex;
+    flex-direction: column;
+    z-index: 12;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    width: 100%;
+    top: 34px;
+    height: 100px;
+}
+
+.headerCta {
+    display: inline-flex;
+    justify-content: right;
+    align-items: center;
+    height: 100%;
+    gap: 5px;
+}
+
+.ctaSecond {
+    color: var(--secondary);
+    font-size: 15px;
+    font-family: Inter;
+    font-weight: 500;
+    padding: 0px 25px;
+    border-radius: 500px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    transition: 0.2s;
+}
+
+.ctaMain {
+    padding: 0px 25px;
+    font-weight: 500;
+    height: 45px;
+    border-radius: 500px;
+    border: 0px;
+    cursor: pointer;
+    background-color: var(--primary);
+    transition: 0.2s;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 22px;
+}
+
+.navP {
+    color: var(--secondary);
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Inter;
+    cursor: pointer;
+    padding: 6.5px 10px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.headerAuth {
+    height: 130px;
+    background-color: transparent;
+    width: 100%;
+}
+
+.headerNoAuth {
+    height: 100px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.settingBg {
+    z-index: 19;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.settingModal {
+    width: 30%;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+
+.settingModalIcon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    fill: var(--softBlack);
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.settingModalIcon:hover {
+    background-color: var(--stageSurface);
+}
+
+.settingModalH1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--softBlack);
+    padding: 25px 35px;
+    padding-bottom: 10px;
+}
+
+.settingModalElement {
+    width: 100%;
+}
+
+.settingModalP {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--softBlack);
+    padding: 15px 35px;
+    opacity: 0.8;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.settingModalP:hover {
+    background-color: var(--stageSurface);
+}

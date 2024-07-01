@@ -1,7 +1,7 @@
 .nav-ham {
     width: 17px;
     height: 17px;
-    fill: #333;
+    fill: var(--secondary);
     margin-left: 20px;
     cursor: pointer;
     display: none;
@@ -10,7 +10,7 @@
   .nav-ham-ham {
     width: 25px;
     height: 25px;
-    fill: #333;
+    fill: var(--secondary);
     margin-left: 17px;
     cursor: pointer;
     display: none;
@@ -19,7 +19,7 @@
   .sidemenu-ham {
     width: 35px;
     height: 35px;
-    fill: #333;
+    fill: var(--secondary);
     margin-left: 20px;
     cursor: pointer;
     display: none;
@@ -315,8 +315,6 @@
     left: 0;
     width: 100%;
     height: 670px;
-    background-color: rgba(255,255,255,.2);
-    
   }
   
   .nav-bar {
@@ -386,11 +384,6 @@
     align-items: center;
     gap: 50px;
     flex-flow: row nowrap;
-  }
-  
-  .normalHeader {
-    top: 0 !important;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05) !important;
   }
   
   .nav-bar-stage {
@@ -887,14 +880,14 @@
   .ntd-h1 {
     font-family: Inter;
     font-weight: 600;
-    color: #333;
+    color: var(--secondary);
     font-size: 16px;
   }
 
   .ntd-a {
     font-family: Inter;
     font-weight: 300;
-    color: #333;
+    color: var(--secondary);
     opacity: 0.7;
     text-decoration: underline;
     font-size: 11px;
@@ -938,18 +931,18 @@
     transition: 0.2s;
   }
   .ntd-nav-element:hover {
-    color: #333 !important;
+    color: var(--secondary) !important;
     opacity: 1 !important;
   }
 
   .ntd-nav-element-active {
     font-family: Inter;
     font-weight: 500;
-    color: #333;
+    color: var(--secondary);
     cursor: pointer;
     font-size: 13px;
     padding: 10px;
-    border-bottom: 2px #333 solid;
+    border-bottom: 2px var(--secondary) solid;
   }
 
   .ntd-element-active {
@@ -961,7 +954,7 @@
   .ntd-element-h1 {
     font-family: Inter;
     font-weight: 400;
-    color: #333;
+    color: var(--secondary);
     opacity: 0.9;
     font-size: 14px;
   }
@@ -969,7 +962,7 @@
   .ntd-element-p {
     font-family: Inter;
     font-weight: 300;
-    color: #333;
+    color: var(--secondary);
     opacity: 0.6;
     padding-top: 3px;
     font-size: 11px;
@@ -1314,7 +1307,6 @@
 .faq-container {
     margin-top: 40px;
     width: 100%;
-    max-width: 800px;
     opacity: 0;
     animation: 1000ms ease 0s 1 normal none running fadeIn;
     animation-fill-mode: forwards;
@@ -1449,9 +1441,7 @@
 .faq-help {
   border-radius: 5px;
   background-color: var(--stageSurface);
-  width: calc(100% + 40px);
   padding: 0px 20px;
-  margin-left: 0px;
   margin-top: 20px;
 }
 
@@ -1933,15 +1923,17 @@ gap: 8px;
   }
   
   .nav-scrolled {
-    position: fixed;
-    height: 70px;
-    background-color: rgba(255,255,255,.85);
-    backdrop-filter: blur(8px);
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
-    -webkit-backdrop-filter: blur(8px);
-    top: 0;
+    position: fixed !important;
+    background-color: #fff;
+    border-bottom: 1px solid var(--stageSurface);
+    top: 0 !important;
+    width: 100%;
     left: 0;
     animation: stickTop 0.55s 1;
+  }
+
+  .nav-scrolled nav {
+    padding-top: 0px !important;
   }
   
   @keyframes stickTop {
@@ -2351,7 +2343,7 @@ gap: 8px;
     font-family: Inter;
     font-weight: 500;
     font-size: 24px;
-    color: #333;
+    color: var(--secondary);
   }
 
   .set-h2 {
@@ -2375,7 +2367,7 @@ gap: 8px;
     font-weight: 400;
     font-size: 16px;
     padding: 10px 0px;
-    color: #333;
+    color: var(--secondary);
   }
 
   .set-section-h2 {
@@ -2433,7 +2425,7 @@ gap: 8px;
   .set-noti-p {
     font-family: Inter;
     font-weight: 400;
-    color: #333;
+    color: var(--secondary);
     font-size: 13px;
   }
 
@@ -2448,7 +2440,7 @@ gap: 8px;
   .set-noti-li-input-btn {
     font-family: Inter;
     font-weight: 400;
-    color: #333;
+    color: var(--secondary);
     font-size: 13px;
     border-radius: 500px;
     cursor: pointer;
@@ -2636,14 +2628,14 @@ gap: 8px;
   .set-payment-h1 {
     font-family: Inter;
     font-weight: 500;
-    color: #333;
+    color: var(--secondary);
     font-size: 15px;
   }
 
   .set-payment-h2 {
     font-family: Inter;
     font-weight: 400;
-    color: #333;
+    color: var(--secondary);
     opacity: 0.5;
     padding-top: 5px;
     padding-bottom: 30px;
@@ -2676,3 +2668,78 @@ gap: 8px;
     font-family: Inter;
     font-weight: 600;
   }
+
+.faq__wrapper {
+  width: 100%;
+  display: flex;
+  padding: 50px 7%;
+}
+
+.faq__h1 {
+  font-weight: 700;
+  color: var(--secondary);
+  font-size: 60px;
+  max-width: 40%;
+}
+
+.faq__container {
+  width: 60%;
+}
+
+.faq__element {
+  width: 100%;
+  width: 100%;
+  transition: 0.2s;
+  border-top: 1px solid #ebebeb;
+}
+
+.faq__element:hover {
+  background-color: var(--stageSurface);
+}
+
+.faq__element__ui {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  padding: 25px;
+  justify-content: space-between;
+}
+
+.faq__element__ux {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  display: none;
+  transition: 1s;
+  animation: 1s ease fadeIn;
+}
+
+.faq__element__ui__h1 {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.faq__selected .faq__element__icon {
+  transform: rotate(-180deg);
+  transition: 0.4s;
+}
+
+.faq__selected .faq__element__ux {
+  display: block !important;
+}
+
+.faq__element__ux__p {
+  font-weight: 300;
+  color: var(--secondary);
+  display: inline;
+  font-size: 15px;
+  line-height: 150%;
+}
+
+.faq__element__ux__a {
+  font-weight: 500;
+  color: var(--primary);
+  display: inline;
+  font-size: 15px;
+}

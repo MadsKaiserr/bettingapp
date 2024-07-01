@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['cdn.sportmonks.com', 'graph.facebook.com'],
+    domains: ['cdn.sportmonks.com', 'graph.facebook.com', 'hellovoum.com'],
   },
   reactStrictMode: false,
   pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js'],

@@ -6,9 +6,8 @@ import { Router, useRouter } from 'next/router'
 import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
-import StageHeader from '../layout/stageheader';
 import Height from '../components/height';
-import DownArrow from './../img/down-arrow.png';
+import DownArrow from './../assets/img/down-arrow.png';
 import cookie from 'js-cookie'
  
 function StageAktiveSpil ({ data }) {
@@ -169,10 +168,9 @@ function StageAktiveSpil ({ data }) {
     return (
         <>
             <Head>
-                <title>Aktive spil - Tipsspillet</title>
+                <title>Aktive spil - Fantasybetting</title>
                 <meta name="robots" content="noindex" />
             </Head>
-            <StageHeader />
             <Height />
             {/* <div className="match-figure" id="">
                 <div className="info-figure1"></div>

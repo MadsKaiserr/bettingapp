@@ -1,0 +1,386 @@
+.container {
+    padding: 24px 5%;
+    width: 100%;
+    background-color: var(--background);
+    min-height: 600px;
+    padding-bottom: 100px;
+}
+
+.h1 {
+    font-weight: 500;
+    font-size: 22px;
+    color: #333;
+}
+
+.h2 {
+    font-weight: 300;
+    font-size: 13px;
+    color: var(--softBlack);
+    opacity: 0.8;
+    padding-top: 5px;
+}
+
+.mainNav {
+    display: inline-flex;
+    margin-top: 20px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.menuP {
+    font-family: Inter;
+    font-weight: 500;
+    color: var(--softBlack);
+    font-size: 13px;
+    padding: 12.5px 0px;
+}
+
+.menuActive {
+    padding: 0px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-width: 60px;
+    border-bottom: 2px solid var(--primary);
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
+}
+
+.menuElement {
+    padding: 0px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-width: 60px;
+    border-bottom: 2px solid transparent;
+}
+
+.betContainer {
+    margin-top: 20px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.oddWrapper li {
+    animation: none !important;
+    opacity: 1 !important;
+}
+
+.betContainer li {
+    opacity: 0;
+    animation-fill-mode: forwards !important;
+}
+
+.betContainer li:nth-child(1n) {
+    animation: 1000ms ease 0s 1 normal none running fadeIn;
+    animation-delay: 0.05s;
+}
+
+.betContainer li:nth-child(2n) {
+    animation: 1000ms ease 0s 1 normal none running fadeIn;
+    animation-delay: 0.15s;
+}
+
+.betContainer li:nth-child(3n) {
+    animation: 1000ms ease 0s 1 normal none running fadeIn;
+    animation-delay: 0.25s;
+}
+
+.kupon {
+    background-color: #fff;
+    border-top: 5px var(--orange) solid;
+    border-radius: 2px;
+    width: 100%;
+    padding-bottom: 15px;
+    vertical-align: top;
+    position: relative;
+    margin-right: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: matrix(1,0,0,1,0,-50);
+    }
+    15% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: matrix(1,0,0,1,0,0);
+    }
+}
+
+.kuponLost {
+    background-color: #fff;
+    border-top: 5px var(--red) solid;
+    border-radius: 2px;
+    width: 100%;
+    vertical-align: top;
+    position: relative;
+    margin-right: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
+}
+
+.kuponWon {
+    background-color: #fff;
+    border-top: 5px var(--green) solid;
+    border-radius: 2px;
+    width: 100%;
+    vertical-align: top;
+    position: relative;
+    margin-right: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
+}
+
+.kuponInfo {
+    padding: 10px 15px;
+    padding-top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kuponP {
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--black);
+    opacity: 0.8;
+    display: inline-block;
+}
+
+.kuponPB {
+    font-size: 13px;
+    color: #000;
+    display: inline-block;
+    font-weight: 600;
+    opacity: 1;
+    padding-left: 5px;
+}
+
+.kuponHeaderP {
+    text-align: center;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 0px;
+    color: var(--black);
+}
+
+.kuponLeftP {
+    font-family: Inter;
+    color: var(--softBlack);
+    font-size: 13px;
+    font-weight: 400;
+    position: absolute;
+    top: 11.5px;
+    left: 15px;
+}
+  
+.kuponRightP {
+    font-family: Inter;
+    color: var(--softBlack);
+    font-size: 13px;
+    font-weight: 300;
+    position: absolute;
+    top: 11.5px;
+    text-transform: capitalize;
+    right: 15px;
+}
+
+.oddWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.kuponBox {
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+    margin-top: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 7px 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: -0.4px 0.8px 1px 1px rgba(0,0,0,0.1);
+}
+
+.betElement {
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    display: block;
+    padding-bottom: 10px;
+    cursor: pointer;
+    border-left: 6px solid var(--orange);
+}
+
+.betElementWon {
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    display: block;
+    padding-bottom: 10px;
+    cursor: pointer;
+    border-left: 6px solid var(--green);
+}
+
+.betElementLost {
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    display: block;
+    padding-bottom: 10px;
+    cursor: pointer;
+    border-left: 6px solid var(--red);
+}
+
+.kuponDivider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--grey);
+    opacity: 0.3;
+}
+
+.betTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+}
+
+.betTopP {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 5px 15px;
+    color: var(--black);
+    opacity: 0.8;
+    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+}
+
+.betContent {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.betInfo {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+
+.betInfoH1 {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 8px 15px;
+    padding-bottom: 0px !important;
+    color: var(--black);
+}
+  
+.betInfoP {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 8px 15px;
+    padding-top: 0px !important;
+    color: var(--black);
+    opacity: 0.8;
+}
+
+.kuponOdds {
+    text-align: right;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+}
+
+.betInfoH2 {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 5px !important;
+    color: var(--black);
+}
+
+.betWrapper {
+    position: relative;
+    cursor: pointer;
+    width: calc(100% - 26px);
+    background-color: var(--surface);
+    border-radius: 5px;
+    padding: 12px 15px;
+    display: block;
+    margin: 0px 13px;
+}
+
+.mainWrapper {
+    position: relative;
+    width: calc(100% - 26px);
+    background-color: var(--surface);
+    border-radius: 5px;
+    padding: 12px 0px;
+    display: block;
+}
+
+.kuponH1 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.kuponH1B {
+    font-weight: 600;
+}
+
+.kuponH2 {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--softBlack);
+    opacity: 0.7;
+}
+
+.kuponH3 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+    padding-top: 3px;
+}
+
+.kuponH2Date {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--softBlack);
+}
+
+.skeletonWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skeletonElement {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}

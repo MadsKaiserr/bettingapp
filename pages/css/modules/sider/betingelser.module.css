@@ -1,0 +1,58 @@
+.container {
+    padding: 0px 5%;
+    padding-top: 45px;
+    padding-bottom: 125px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.h1 {
+    color: var(--secondary);
+    font-size: 35px;
+    font-family: Inter;
+    font-weight: 700;
+}
+
+.h2 {
+    font-size: 18px;
+    color: var(--secondary);
+    font-family: Inter;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.p {
+    color: var(--secondary);
+    font-size: 17px;
+    margin-bottom: 5px;
+    font-family: Inter;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+.h3 {
+    color: var(--secondary);
+    font-size: 22px;
+    font-family: Inter;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.h4 {
+    color: var(--secondary);
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: Inter;
+    font-weight: 600;
+}
+
+.betingelser__section {
+    padding-bottom: 60px;
+    padding-top: 15px;
+}
+
+.betingelser__element {
+    padding-bottom: 20px;
+}

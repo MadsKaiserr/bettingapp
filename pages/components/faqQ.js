@@ -26,8 +26,7 @@ module.exports = {
                         "text": "Du kan købe Premium abonnement for at støtte os, og lave dine egne gruppespil, deltage i præmiedyster, få udvidet statistikker og meget mere, ved at navigere til "
                     },
                     {
-                        "type": "link",
-                        "to": "/priser",
+                        "type": "text",
                         "text": "Priser"
                     },
                     {
@@ -69,8 +68,7 @@ module.exports = {
                         "text": "Du kan købe abonnement og adgangsbilletter under siden "
                     },
                     {
-                        "type": "link",
-                        "to": "/priser",
+                        "type": "text",
                         "text": "Priser"
                     },
                     {

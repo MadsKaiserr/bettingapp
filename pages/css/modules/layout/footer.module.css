@@ -1,0 +1,198 @@
+.footer {
+    width: 100%;
+    border-top: 1px solid #e4e5e7;
+    padding: 74px 7%;
+    padding-bottom: 10px;
+}
+
+.footerWrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footerElement {
+    padding-right: 130px;
+}
+
+.footerH1 {
+    font-size: 14px;
+    color: rgb(139 139 139);
+    font-weight: 400;
+    padding-bottom: 10px;
+    opacity: 0.9;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.footerA {
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 400;
+    margin-top: 18px;
+    transition: 0.2s;
+    display: inline-block;
+    border-radius: 1px;
+    padding-bottom: 3px;
+    margin-bottom: 0px;
+    border-bottom: 3px solid transparent;
+}
+
+.footerA:hover {
+    padding-bottom: 1px;
+    margin-bottom: 2px;
+    border-bottom: 3px solid var(--primary);
+}
+
+.footerBottom {
+    margin-top: 80px;
+    border-top: 1px solid #e4e5e7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.settingBg {
+    z-index: 19;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.settingModal {
+    width: 30%;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+
+.settingModalIcon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    fill: var(--softBlack);
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.settingModalIcon:hover {
+    background-color: var(--stageSurface);
+}
+
+.settingModalH1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--softBlack);
+    padding: 25px 35px;
+    padding-bottom: 10px;
+}
+
+.settingModalElement {
+    width: 100%;
+}
+
+.settingModalP {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--softBlack);
+    padding: 15px 35px;
+    opacity: 0.8;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.settingModalP:hover {
+    background-color: var(--stageSurface);
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.settingElement {
+    display: flex;
+    padding: 8px 12px;
+    border-radius: 500px;
+    transition: 0.2s;
+    cursor: pointer;
+    gap: 7px;
+}
+
+.settingElement:hover {
+    background-color: var(--stageSurface);
+}
+
+.settingIcon {
+    width: 16px;
+    height: 16px;
+    fill: var(--softBlack);
+}
+
+.settingP {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--softBlack);
+}
+
+.footerLogoCP {
+    font-size: 14px;
+    color: var(--black);
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+.footerCP {
+    font-size: 14px;
+    letter-spacing: 0.15px;
+    color: rgb(139 139 139);
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+.footerLogo {
+    position: relative;
+    height: 40px;
+}
+
+.footerLogoImage {
+    height: 40px;
+    width: auto;
+}
+
+.someWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.iconWrapper {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    transition: 0.2s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px;
+}
+
+.iconWrapper:hover {
+    background-color: #edeff5;
+}
+
+.footerIcon {
+    position: relative;
+    fill: #5f6167;
+}

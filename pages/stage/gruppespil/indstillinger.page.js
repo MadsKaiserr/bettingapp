@@ -4,7 +4,6 @@ import { getUser } from "../../services/authService";
 import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
-import StageHeader from '../../layout/stageheader';
 import Height from '../../components/height';
 import cookie from 'js-cookie'
 import Back from "../../components/back.js";
@@ -67,10 +66,9 @@ function GruppespilIndstillinger ({data}) {
     return (
         <>
             <Head>
-                <title>Gruppespil - Tipsspillet</title>
+                <title>Gruppespil - Fantasybetting</title>
                 <meta name="robots" content="noindex" />
             </Head>
-            <StageHeader />
             <Height />
             <div className="match-figure" style={{top: "100px"}}>
                 <div className="info-figure1"></div>

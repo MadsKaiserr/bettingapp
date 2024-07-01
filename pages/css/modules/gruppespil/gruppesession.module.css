@@ -1,0 +1,168 @@
+.gs__container {
+    padding: 20px 160px;
+    background-color: var(--surface);
+    padding-bottom: 150px !important;
+}
+
+.gs-gs__container .back__btn {
+    margin-left: 0px !important;
+}
+
+.gruppespil__section__primary {
+    background-color: #fff;
+    padding: 30px 50px;
+    border-top: 4px var(--primary) solid;
+    margin: 0px auto;
+    z-index: 2;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.gruppespil__section {
+    background-color: #fff;
+    padding: 30px 50px;
+    margin: 0px auto;
+    margin-top: 20px;
+    z-index: 2;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
+}
+
+.main__h2 {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 26px;
+    color: #333;
+}
+
+.gruppespil__h1 {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 38px;
+    color: #333;
+}
+
+.gruppespil__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.gruppespil__info__element {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.gruppespil__info__element__p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--black);
+    opacity: 0.7;
+}
+
+.gruppespil__info__element__h1 {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 22px;
+    max-width: 200px;
+    overflow: hidden;
+    color: var(--black);
+}
+
+.main__btn {
+    padding: 10px 15px;
+    border-radius: 3px;
+    color: #fff;
+    min-width: 111px;
+    font-size: 14px;
+    border: 0px;
+    font-weight: 500;
+    white-space: nowrap;
+    font-family: Inter;
+    cursor: pointer;
+    transition: 0.2s;
+    background: -webkit-linear-gradient(-60deg, #21D4FD -50%, #B721FF 200%);
+}
+
+.main__btn__off {
+    padding: 10px 15px;
+    border-radius: 3px;
+    color: #fff;
+    opacity: 0.5;
+    min-width: 111px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: 0px;
+    font-weight: 500;
+    white-space: nowrap;
+    font-family: Inter;
+    cursor: not-allowed;
+    transition: 0.2s;
+    background: -webkit-linear-gradient(-60deg, #21D4FD -50%, #B721FF 200%);
+}
+
+.gruppespil__info__element__p2 {
+    font-family: Inter;
+    font-weight: 300;
+    margin: auto;
+    font-size: 13px;
+    color: var(--softBlack);
+    opacity: 0.7;
+    max-width: 450px;
+    padding-top: 7px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 10px;
+    margin-top: 40px;
+    max-width: 250px;
+    border: 0px;
+    background-color: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.6);
+}
+
+.main__h3 {
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 13px;
+    text-transform: capitalize;
+    color: #333;
+    opacity: 0.7;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.main__h3 p:first-child {
+    white-space: nowrap;
+}
+
+.main__h3__divider {
+    width: 3.5px;
+    min-width: 3.5px;
+    height: 3.5px;
+    border-radius: 50%;
+    opacity: 0.5;
+    background-color: #333;
+}

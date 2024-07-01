@@ -1,0 +1,92 @@
+.container {
+    padding: 24px 25%;
+    width: 100%;
+    background-color: var(--background);
+    min-height: 600px;
+    padding-bottom: 100px;
+}
+
+.gruppespilSection {
+    background-color: #fff;
+    padding: 30px 50px;
+    border-top: 4px var(--primary) solid;
+    margin: 0px auto;
+    z-index: 2;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
+}
+
+.opretH1 {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 26px;
+    color: #333;
+}
+
+.opretH2 {
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 15px;
+    color: var(--softBlack);
+    opacity: 0.85;
+    padding-top: 2px;
+}
+
+.opretForm {
+    padding-top: 20px;
+}
+
+.dataH2 {
+    color: #333;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 500;
+}
+
+.element {
+    padding-bottom: 40px;
+}
+
+.dataH3 {
+    color: var(--softBlack);
+    font-size: 12px;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    font-family: Inter;
+    font-weight: 400;
+}
+
+.multiInput {
+    border: 0px;
+    overflow: hidden;
+    height: 50px;
+    background-color: var(--surface);
+    width: 100%;
+    display: flex;
+}
+
+.input {
+    border: 0px;
+    overflow: hidden;
+    padding: 0px 15px;
+    position: relative;
+    height: 50px;
+    background-color: var(--surface);
+    width: 100%;
+    font-family: Inter;
+    font-weight: 300;
+    color: #333;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s;
+    border-radius: 2px;
+    border-bottom: 1px solid rgb(195, 195, 195);
+}
+
+.input:focus {
+    border-color: var(--primary) !important;
+}

@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.h1 {
+    font-size: 56px;
+    font-family: Inter;
+    font-weight: 700;
+    color: var(--secondary);
+    padding-bottom: 30px;
+}
+
+.h2 {
+    color: var(--secondary);
+    opacity: 0.8;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+}
+
+.btn {
+  padding: 0px 24px;
+  height: 50px;
+  background-color: var(--primary);
+  border-radius: 500px;
+  border: 0px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
+  overflow: hidden;
+  transition: 0.35s;
+  position: relative;
+}
+
+.btn span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
+}
+
+.btn span {
+  z-index: 2;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: var(--y);
+  left: -50px;
+  width: 23px;
+  height: 20px;
+  transition: width 0.6s, height 0.6s;
+  border-radius: 50%;
+  background-color: var(--primaryAccent);
+}
+
+.btn:hover::before {
+  width: 250px;
+  height: 100px;
+  border-radius: 5px;
+}

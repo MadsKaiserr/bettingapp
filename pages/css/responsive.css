@@ -935,8 +935,8 @@
     display: none !important;
   }
   .signup-container {
-    padding-left: 8% !important;
-    padding-right: 8% !important;
+    padding-left: 7% !important;
+    padding-right: 7% !important;
   }
   .op-cta {
     width: 90% !important;
@@ -1804,9 +1804,6 @@
   }
   .nav-container-mid {
     justify-content: flex-start !important;
-    gap: 5px !important;
-  }
-  .nav-scrolled .nav-container-fix .nav-container-mid {
     gap: 5px !important;
   }
 }

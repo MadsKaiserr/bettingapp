@@ -1,0 +1,217 @@
+.container {
+    padding: 24px 7%;
+    width: 100%;
+    background-color: #fff;
+    min-height: 600px;
+    padding-bottom: 100px;
+}
+
+.hero {
+    width: 100%;
+    padding-top: 40px;
+}
+
+.heroWrapper {
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.heroH1 {
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 100%;
+    color: #21212f;
+}
+
+.heroH2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    padding-top: 10px;
+    max-width: 450px;
+    color: var(--softBlack);
+}
+
+.heroNav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 35px;
+    gap: 20px;
+}
+
+.heroBtnActive {
+    width: 100%;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    justify-content: center;
+    transition: 0.8s;
+    border: 1px solid var(--primary);
+    padding: 14px 0px;
+    background-color: var(--primary);
+}
+
+.heroBtnActive span {
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    transition: 0.4s;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.heroBtn {
+    width: 100%;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    justify-content: center;
+    transition: 0.8s;
+    border: 1px solid #21212f;
+    padding: 14px 0px;
+    background-color: transparent;
+}
+
+.heroBtn span {
+    z-index: 1;
+    position: relative;
+    color: #21212f;
+    transition: 0.4s;
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    fill: #21212f;
+}
+
+.heroBtn::before {
+    content: "";
+    position: absolute;
+    top: var(--y);
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    transition: width 0.8s, height 0.8s;
+    border-radius: 50%;
+    background-color: var(--primary);
+}
+
+.heroBtn:hover span {
+    color: #fff;
+    fill: #fff;
+}
+
+.heroBtn:hover {
+    border-color: var(--primary);
+}
+
+.heroBtn:hover::before {
+    width: 300px;
+    height: 300px;
+    border-radius: 100px;
+}
+
+.heroMedia {
+    width: 100%;
+    border-radius: 25px;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    background-color: #21212f;
+}
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: matrix(1,0,0,1,0,50);
+    }
+    15% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: matrix(1,0,0,1,0,0);
+    }
+}
+
+@keyframes fadeLeft {
+    0% {
+      opacity: 0;
+      transform: matrix(1,0,0,1,-50,0);
+    }
+    15% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: matrix(1,0,0,1,0,0);
+    }
+}
+
+.faq__container {
+    width: 60%;
+}
+
+.faq__element {
+    width: 100%;
+    width: 100%;
+    transition: 0.2s;
+    border-top: 1px solid #ebebeb;
+}
+
+.faq__element:hover {
+    background-color: var(--stageSurface);
+}
+
+.faq__element__ui {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 25px;
+    justify-content: space-between;
+}
+
+.faq__element__ux {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    display: none;
+    transition: 1s;
+}
+
+.faq__element__ui__h1 {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.faq__selected .faq__element__icon {
+    transform: rotate(-180deg);
+    transition: 0.4s;
+}
+
+.faq__selected .faq__element__ux {
+    display: block !important;
+}
+
+.faq__element__ux__p {
+    font-weight: 400;
+    color: #333;
+    display: inline;
+    font-size: 17px;
+    line-height: 150%;
+}
+
+.faq__element__ux__a {
+    font-weight: 500;
+    color: var(--primary);
+    display: inline;
+    font-size: 17px;
+}

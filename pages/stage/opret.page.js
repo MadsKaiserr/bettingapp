@@ -7,8 +7,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 import Height from '../components/height';
-import PrimaryLogo from '../img/logo-primary.png';
-import StageHeader from '../layout/stageheader';
+import PrimaryLogo from '../assets/img/logo-primary.png';
 import { getSearch } from '../services/search';
  
 function Opret ({ }) {
@@ -216,10 +215,9 @@ function Opret ({ }) {
     return (
         <>
             <Head>
-                <title>Opret gruppespil - Tipsspillet</title>
+                <title>Opret gruppespil - Fantasybetting</title>
                 <meta name="robots" content="noindex" />
             </Head>
-            <StageHeader />
             <Height />
             <div className="match-figure" style={{top: "200px"}}>
                 <div className="info-figure1"></div>

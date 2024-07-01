@@ -2,10 +2,9 @@ import * as React from 'react';
 import { useEffect, useState } from 'react';
 import Link from 'next/link'
 import Head from 'next/head'
-import Header from './layout/header';
+import Header from './layout/header.tsx';
 import axios from "axios";
 import FaqComponent from './components/faq';
-import PriserComp from './components/priser';
 import Spacer from './components/spacer';
  
 function Priser () {
@@ -13,16 +12,16 @@ function Priser () {
     return (
         <>
             <Head>
-                <title>Priser - Køb Abonnement | Tipsspillet</title>
-                <link rel="canonical" href="https://www.tipsspillet.dk/priser" />
-                <meta name="description" content="Hvad koster abonnement hos Tipsspillet? Spil helt gratis, eller opgrader til Plus eller Premium, og opret gruppespil og deltag i præmiedyster." />
+                <title>Priser - Køb Abonnement | Fantasybetting</title>
+                <link rel="canonical" href="https://www.Fantasybetting.dk/priser" />
+                <meta name="description" content="Hvad koster abonnement hos Fantasybetting? Spil helt gratis, eller opgrader til Plus eller Premium, og opret gruppespil og deltag i præmiedyster." />
                 <meta name="author" content="Mads Kaiser" />
-                <meta name="keywords" content="tipsspillet priser, tipsspillet abonnement, abonnement, priser, betting abonnement, odds abonnement" />
-                <meta itemProp="name" content="Tipsspillet Priser og Abonnement" />
-                <meta itemProp="description" content="Hvad koster abonnement hos Tipsspillet? Spil helt gratis, eller opgrader til Plus eller Premium, og opret gruppespil og deltag i præmiedyster." />
-                <meta property="og:title" content="Priser - Abonnement - Tipsspillet" />
-                <meta property="og:url" content="https://www.tipsspillet.dk/priser" />
-                <meta property="og:description" content="Hvad koster abonnement hos Tipsspillet? Spil helt gratis, eller opgrader til Plus eller Premium, og opret gruppespil og deltag i præmiedyster." />
+                <meta name="keywords" content="Fantasybetting priser, Fantasybetting abonnement, abonnement, priser, betting abonnement, odds abonnement" />
+                <meta itemProp="name" content="Fantasybetting Priser og Abonnement" />
+                <meta itemProp="description" content="Hvad koster abonnement hos Fantasybetting? Spil helt gratis, eller opgrader til Plus eller Premium, og opret gruppespil og deltag i præmiedyster." />
+                <meta property="og:title" content="Priser - Abonnement - Fantasybetting" />
+                <meta property="og:url" content="https://www.Fantasybetting.dk/priser" />
+                <meta property="og:description" content="Hvad koster abonnement hos Fantasybetting? Spil helt gratis, eller opgrader til Plus eller Premium, og opret gruppespil og deltag i præmiedyster." />
             </Head>
             <Header />
             <Spacer />
@@ -32,7 +31,6 @@ function Priser () {
                     <h2 className="priser-h2 animation-fadetop animation-delay-300">Find det <span style={{color: "var(--primary)", fontWeight: "500"}}>abonnement</span> der bedst passer dig.</h2>
                 </div>
             </div>
-            <PriserComp />
             <FaqComponent />
         </>
     )

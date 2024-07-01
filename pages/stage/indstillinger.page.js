@@ -1,16 +1,14 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import Head from 'next/head'
-import StageHeader from '../layout/stageheader';
-import Priser from '../components/priser';
 import axios from "axios";
 import Link from 'next/link'
 import cookie from 'js-cookie'
 import Image from 'next/image'
 import { getUser } from "../services/authService";
-import Mastercard from '../img/mastercard.png';
+import Mastercard from '../assets/img/mastercard.png';
 import { useRouter } from 'next/router'
-import Visa from '../img/visa.png';
+import Visa from '../assets/img/visa.png';
  
 function StageIndstillinger ({data}) {
     const router = useRouter()
@@ -21,7 +19,7 @@ function StageIndstillinger ({data}) {
 
     const [latestInv, setLatestInv] = useState(0);
     const [cardOnline, setCardOnline] = useState(false);
-    const [fakturaLink, setFakturaLink] = useState("https://www.tipsspillet.dk/stage/indstillinger")
+    const [fakturaLink, setFakturaLink] = useState("https://www.Fantasybetting.dk/stage/indstillinger")
     const [last4, setLast4] = useState("xxxx");
     const [priceAmt, setPriceAmt] = useState(0);
     const [cardName, setCardName] = useState("Indlæser...");
@@ -154,7 +152,7 @@ function StageIndstillinger ({data}) {
                 setUpgradeModal(true)
             } else {
                 setLoading1(false);
-                setNotiMessage("error", "Du har allerede abonnement", "Gå til indstillinger på din profil, og herunder abonnement, for at ændre dit nuværende abonnement. Se også https://www.tipsspillet.dk/stage/indstillinger");
+                setNotiMessage("error", "Du har allerede abonnement", "Gå til indstillinger på din profil, og herunder abonnement, for at ændre dit nuværende abonnement. Se også https://www.Fantasybetting.dk/stage/indstillinger");
             }
         } else {
             router.push("/login")
@@ -251,7 +249,7 @@ function StageIndstillinger ({data}) {
                 setUpgradeModal(true)
             } else {
                 setLoading2(false);
-                setNotiMessage("error", "Du har allerede abonnement", "Gå til indstillinger på din profil, og herunder abonnement, for at ændre dit nuværende abonnement. Se også https://www.tipsspillet.dk/stage/indstillinger");
+                setNotiMessage("error", "Du har allerede abonnement", "Gå til indstillinger på din profil, og herunder abonnement, for at ændre dit nuværende abonnement. Se også https://www.Fantasybetting.dk/stage/indstillinger");
             }
         } else {
             router.push("/login")
@@ -502,10 +500,9 @@ function StageIndstillinger ({data}) {
     return (
         <>
             <Head>
-                <title>Indstillinger - Tipsspillet</title>
+                <title>Indstillinger - Fantasybetting</title>
                 <meta name="robots" content="noindex" />
             </Head>
-            <StageHeader />
             {modal && <div className="modal-test">
                 <div className="modal-con">
                     <p className="con-modal-p">Dine indstillinger blev opdateret</p>

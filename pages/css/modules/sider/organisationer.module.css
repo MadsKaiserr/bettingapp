@@ -1,0 +1,501 @@
+.container {
+    padding: 24px 7%;
+    width: 100%;
+    background-color: #fff;
+    min-height: 600px;
+    padding-bottom: 100px;
+}
+
+.hero {
+    width: 100%;
+    padding-top: 40px;
+}
+
+.heroWrapper {
+    display: flex;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+
+.heroH1 {
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 100%;
+    color: #21212f;
+}
+
+.heroH2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    padding-top: 10px;
+    max-width: 450px;
+    color: var(--softBlack);
+}
+
+.heroNav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 35px;
+    gap: 20px;
+}
+
+.heroBtnActive {
+    width: 100%;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    justify-content: center;
+    transition: 0.8s;
+    border: 1px solid var(--primary);
+    padding: 14px 0px;
+    background-color: var(--primary);
+}
+
+.heroBtnActive span {
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    transition: 0.4s;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.heroBtn {
+    width: 100%;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    justify-content: center;
+    transition: 0.8s;
+    border: 1px solid #21212f;
+    padding: 14px 0px;
+    background-color: transparent;
+}
+
+.heroBtn span {
+    z-index: 1;
+    position: relative;
+    color: #21212f;
+    transition: 0.4s;
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    fill: #21212f;
+}
+
+.heroBtn::before {
+    content: "";
+    position: absolute;
+    top: var(--y);
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    transition: width 0.8s, height 0.8s;
+    border-radius: 50%;
+    background-color: var(--primary);
+}
+
+.heroBtn:hover span {
+    color: #fff;
+    fill: #fff;
+}
+
+.heroBtn:hover {
+    border-color: var(--primary);
+}
+
+.heroBtn:hover::before {
+    width: 300px;
+    height: 300px;
+    border-radius: 100px;
+}
+
+.heroMedia {
+    width: 100%;
+    border-radius: 25px;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    background-color: #21212f;
+}
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: matrix(1,0,0,1,0,50);
+    }
+    15% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: matrix(1,0,0,1,0,0);
+    }
+}
+
+@keyframes fadeLeft {
+    0% {
+      opacity: 0;
+      transform: matrix(1,0,0,1,-50,0);
+    }
+    15% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: matrix(1,0,0,1,0,0);
+    }
+}
+
+.section {
+    padding: 100px 0px;
+}
+
+.inline {
+    display: flex;
+    align-items: center;
+}
+
+.arrowInline {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-right: 5px;
+}
+
+.arrowInline:hover {
+    margin-right: 0px;
+}
+
+.arrowInline:hover .infoComponentIcon {
+    margin-left: 5px;
+}
+
+.spaceBetween {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.infoComponentH1 {
+    font-size: 42px;
+    font-weight: 600;
+    color: #21212f;
+    padding-bottom: 20px;
+    line-height: 100%;
+}
+
+.section__side {
+    display: flex;
+}
+
+.section__side__left {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.section__side__right {
+    width: 60%;
+}
+
+.infoComponentP {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--softBlack);
+    max-width: 600px;
+    line-height: 140%;
+    opacity: 0.8;
+    padding-left: 100px;
+}
+
+.infoComponentA {
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.infoComponentIcon {
+    width: 18px;
+    height: 18px;
+    fill: var(--primary);
+    transition: 0.2s;
+}
+
+.infoComponentByline {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0.8;
+    letter-spacing: 0.8px;
+    color: var(--softBlack);
+}
+
+.infoComponentLogo {
+    height: 24px;
+    width: 24px;
+    position: relative;
+}
+
+.fordeleElement {
+    padding-top: 30px;
+}
+
+.fordeleHeader {
+    background-color: var(--third);
+    width: 100%;
+    border-radius: 5px;
+}
+
+.fordeleH1 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary);
+    padding: 18px 25px;
+}
+
+.fordel {
+    width: 100%;
+    display: flex;
+    padding: 20px 25px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--stageSurface);
+}
+
+.fordelCheck {
+    padding: 3px;
+    background-color: var(--third);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fordelCross {
+    padding: 3px;
+    background-color: #ebebeb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fordelIcon {
+    width: 18px;
+    height: 18px;
+    fill: var(--primary);
+}
+
+.fordelP {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--softBlack);
+}
+
+.splitComponentHeader {
+    display: flex;
+}
+
+.splitComponentLeft {
+    min-height: 250px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.splitComponentRight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 100px;
+}
+
+.mainCta {
+    border-radius: 4px;
+    background-color: var(--primary);
+    padding: 14px 30px;
+    min-width: 200px;
+    min-height: 24px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 30px;
+    border: 0px;
+    transition: 0.2s;
+    cursor: pointer;
+    z-index: 9;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainCta span {
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.mainCta::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    transition: width 0.5s, height 0.5s;
+    border-radius: 100px;
+    background-color: var(--primaryAccent);
+}
+
+.mainCta:hover::before {
+    width: 300px;
+    height: 300px;
+    border-radius: 100px;
+}
+
+.splitArtElement {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+}
+
+.splitArtLongBlock {
+    background-color: var(--stageSurface);
+    border-radius: 5px;
+    width: 70%;
+    height: 110px;
+}
+
+.splitArtShortBlock {
+    background-color: var(--stageSurface);
+    border-radius: 5px;
+    width: 30%;
+    height: 110px;
+}
+
+.testemonialH1 {
+    color: var(--primary);
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+.testemonialP {
+    color: #21212f;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.testemonial {
+    padding-bottom: 40px;
+    position: relative;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.testemonialQuote {
+    position: absolute;
+    top: 0;
+    width: 116px;
+    height: 116px;
+    fill: var(--primary);
+    right: 0;
+}
+
+.testemonialInfo {
+    display: flex;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testemonialLogo {
+    width: 52px;
+    height: 52px;
+    background-color: #21212f;
+    border-radius: 50%;
+}
+
+.testemonialData {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.testemonialDataH1 {
+    color: #21212f;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.testemonialDataP {
+    color: var(--softBlack);
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.testemonialSvg {
+    width: 32px;
+    height: 32px;
+    fill: var(--softBlack);
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.testemonialArrow {
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 1px 0px rgb(0, 0, 0, 1);
+}
+
+.testemonialArrow:hover .testemonialSvg {
+    fill: #fff;
+    opacity: 1;
+}
+
+.testemonialArrow svg {
+    z-index: 1;
+    position: relative;
+}
+
+.testemonialArrow::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    transition: width 0.5s, height 0.5s;
+    border-radius: 100px;
+    background-color: var(--primaryAccent);
+}
+
+.testemonialArrow:hover::before {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+}

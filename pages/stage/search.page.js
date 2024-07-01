@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
-import StageHeader from '../layout/stageheader';
 import Height from '../components/height';
 import { useRouter } from 'next/router';
 import { getSearch } from '../services/search';
@@ -97,10 +96,9 @@ function Search () {
     return (
         <>
             <Head>
-                <title>Søg i hold og ligaer - Tipsspillet</title>
+                <title>Søg i hold og ligaer - Fantasybetting</title>
                 <meta name="robots" content="noindex" />
             </Head>
-            <StageHeader />
             <Height />
             <div className="nav-hits">
                 <div className="search-el">

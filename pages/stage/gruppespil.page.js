@@ -5,7 +5,6 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 import { getKupon, getString } from "../services/algo.js";
-import StageHeader from '../layout/stageheader';
 import Height from '../components/height';
 import cookie from 'js-cookie'
 import { Gradient } from '../services/Gradient.js'
@@ -386,10 +385,9 @@ function StageGruppespil ({data}) {
     return (
         <>
             <Head>
-                <title>Gruppespil - Tipsspillet</title>
+                <title>Gruppespil - Fantasybetting</title>
                 <meta name="robots" content="noindex" />
             </Head>
-            <StageHeader />
             <Height />
             <div className="match-figure" style={{top: "200px"}}>
                 <div className="info-figure1"></div>
@@ -1095,10 +1093,10 @@ function StageGruppespil ({data}) {
                                 </div>
                                 <div className="inv-container">
                                 <div className="inv-element-a" onClick={() => {
-                                if (activeGame && activeGame !== null && activeGame !== undefined) {navigator.clipboard.writeText("https://www.tipsspillet.dk/gruppesession?game=" + activeGame + "&type=invite"); document.getElementById("copied").classList.remove("display-not"); setTimeout(function (){
+                                if (activeGame && activeGame !== null && activeGame !== undefined) {navigator.clipboard.writeText("https://www.Fantasybetting.dk/gruppesession?game=" + activeGame + "&type=invite"); document.getElementById("copied").classList.remove("display-not"); setTimeout(function (){
                 document.getElementById("copied").classList.add("display-not")
             }, 1000);} else {
-                navigator.clipboard.writeText("https://www.tipsspillet.dk/"); document.getElementById("copied").classList.remove("display-not"); setTimeout(function (){
+                navigator.clipboard.writeText("https://www.Fantasybetting.dk/"); document.getElementById("copied").classList.remove("display-not"); setTimeout(function (){
                 document.getElementById("copied").classList.add("display-not")
             }, 1000);
             }}}>
@@ -1110,10 +1108,10 @@ function StageGruppespil ({data}) {
                                         <div className="invite-copied display-not" id="copied">Kopieret</div>
                                     </div>
                                     <div className="inv-element" onClick={() => {
-                                if (activeGame && activeGame !== null) {navigator.clipboard.writeText("https://www.tipsspillet.dk/gruppesession?game=" + activeGame + "&type=invite"); document.getElementById("copied").classList.remove("display-not"); setTimeout(function (){
+                                if (activeGame && activeGame !== null) {navigator.clipboard.writeText("https://www.Fantasybetting.dk/gruppesession?game=" + activeGame + "&type=invite"); document.getElementById("copied").classList.remove("display-not"); setTimeout(function (){
                 document.getElementById("copied").classList.add("display-not")
             }, 1000);} else {
-                navigator.clipboard.writeText("https://www.tipsspillet.dk/"); document.getElementById("copied").classList.remove("display-not"); setTimeout(function (){
+                navigator.clipboard.writeText("https://www.Fantasybetting.dk/"); document.getElementById("copied").classList.remove("display-not"); setTimeout(function (){
                 document.getElementById("copied").classList.add("display-not")
             }, 1000);
             }}}>
@@ -1804,10 +1802,10 @@ function StageGruppespil ({data}) {
                                 </div>
                                 <div className="inv-container">
                                     <div className="inv-element-a" onClick={() => {
-                                if (activeGame && activeGame !== null && activeGame !== undefined) {navigator.clipboard.writeText("https://www.tipsspillet.dk/gruppesession?game=" + activeGame + "&type=invite"); document.getElementById("copied").classList.remove("display-not"); setTimeout(function (){
+                                if (activeGame && activeGame !== null && activeGame !== undefined) {navigator.clipboard.writeText("https://www.Fantasybetting.dk/gruppesession?game=" + activeGame + "&type=invite"); document.getElementById("copied").classList.remove("display-not"); setTimeout(function (){
                 document.getElementById("copied").classList.add("display-not")
             }, 1000);} else {
-                navigator.clipboard.writeText("https://www.tipsspillet.dk/"); document.getElementById("copied").classList.remove("display-not"); setTimeout(function (){
+                navigator.clipboard.writeText("https://www.Fantasybetting.dk/"); document.getElementById("copied").classList.remove("display-not"); setTimeout(function (){
                 document.getElementById("copied").classList.add("display-not")
             }, 1000);
             }}}>
@@ -1819,10 +1817,10 @@ function StageGruppespil ({data}) {
                                         <div className="invite-copied display-not" id="copied">Kopieret</div>
                                     </div>
                                     <div className="inv-element" onClick={() => {
-                                if (activeGame && activeGame !== null && activeGame !== undefined) {navigator.clipboard.writeText("https://www.tipsspillet.dk/gruppesession?game=" + activeGame + "&type=invite"); document.getElementById("copied").classList.remove("display-not"); setTimeout(function (){
+                                if (activeGame && activeGame !== null && activeGame !== undefined) {navigator.clipboard.writeText("https://www.Fantasybetting.dk/gruppesession?game=" + activeGame + "&type=invite"); document.getElementById("copied").classList.remove("display-not"); setTimeout(function (){
                 document.getElementById("copied").classList.add("display-not")
             }, 1000);} else {
-                navigator.clipboard.writeText("https://www.tipsspillet.dk/"); document.getElementById("copied").classList.remove("display-not"); setTimeout(function (){
+                navigator.clipboard.writeText("https://www.Fantasybetting.dk/"); document.getElementById("copied").classList.remove("display-not"); setTimeout(function (){
                 document.getElementById("copied").classList.add("display-not")
             }, 1000);
             }}}>

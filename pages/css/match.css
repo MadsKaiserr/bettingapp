@@ -135,8 +135,7 @@
     background-color: #fff;
     z-index: 3;
     border-radius: 5px;
-    padding: 40px 20px;
-    padding-top: 25px !important;
+    padding: 40px;
     position: relative;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05) !important;
 }
@@ -579,7 +578,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    padding: 15px 10px;
+    padding: 15px 25px;
     overflow-x: auto;
     overflow-y: visible;
     width: 100%;
@@ -591,7 +590,6 @@
 .match-odds-nav-fix {
     position: relative;
     width: 100%;
-    padding: 0px 10px;
     overflow: hidden;
     padding-top: 5px;
 }
@@ -936,6 +934,16 @@
     flex-direction: column;
 }
 
+.stat-indhold {
+    padding: 20px 25px;
+    padding-bottom: 40px;
+}
+
+.stat-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .match-indhold {
     display: none;
     overflow: hidden;
@@ -1035,7 +1043,7 @@
     width: 100%;
     background-color: var(--surface);
     padding-bottom: 5px;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .tabel-p {
@@ -1071,7 +1079,7 @@
 }
 
 .tabel-element {
-    padding: 10px 15px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1087,13 +1095,23 @@
 }
 
 .tabel-top {
-    padding: 10px 15px;
     background-color: var(--stageSurface);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     width: 100%;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.stat-top {
+    background-color: var(--surface);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
 }
 
 .tabel-item {
@@ -1113,7 +1131,8 @@
 
 .tabel-element:hover {
     background-color: var(--stageSurface) !important;
-    transform: scale(1.01);
+    transform: scale(1.008);
+    border-radius: 3px;
 }
 
 .tabel-element:nth-child(odd) {
@@ -1125,6 +1144,10 @@
 }
 
 .tabel-correct {
+    background-color: var(--blueStageSurface) !important;
+}
+
+.tabel-correct:hover {
     background-color: var(--blueStageSurface) !important;
 }
 
@@ -1324,7 +1347,7 @@
 
 .bench-img-logo {
     width: 15px;
-    left: 33px;
+    left: 23px;
     top: 20px;
     height: 15px;
     position: absolute;
@@ -1655,8 +1678,13 @@
     padding: 1.4vh 15px;
     background-color: var(--primary);
     border-radius: 2px;
+    transition: 0.2s;
     margin-top: 5px;
     cursor: pointer;
+}
+
+.match-odds-offer-element:hover {
+    background-color: var(--primaryAccent);
 }
 
 .match-odds-offer-element-3 {
@@ -1796,11 +1824,13 @@
 .stats-element {
     text-align: center;
     width: 100%;
-    margin: 12px 0px;
 }
 
 .stats-container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .stats-stat {

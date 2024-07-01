@@ -1,0 +1,474 @@
+.login__container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    z-index: 3;
+}
+
+.login__element {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.login__left__header__logo {
+    width: 40px;
+    height: 40px;
+}
+
+.login__left__header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.login__left__header__h1 {
+    color: var(--secondary);
+    font-family: ZonaSemi;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.login__left__content {
+    text-align: center;
+}
+
+.login__left__content__placeholder {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #5787F0;
+    margin-bottom: 40px;
+}
+
+.login__left__content__h1 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.login__left__content__h2 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.7;
+    padding-top: 15px;
+}
+
+.container {
+    background-color: var(--background);
+    padding: 100px 14%;
+    padding-top: 60px;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tilbage {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.signupErr {
+    color: var(--red);
+    font-size: 12px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    font-family: Inter;
+    font-weight: 400;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.navigation__active__dot {
+    height: 10px;
+    border-radius: 500px;
+    background-color: var(--primary);
+    width: 28px;
+}
+
+.navigation__dot {
+    height: 10px;
+    border-radius: 500px;
+    background-color: #ebebeb;
+    width: 10px;
+}
+
+.section {
+    width: 600px;
+    background-color: #fff;
+    z-index: 3;
+    border-radius: 7px;
+    position: relative;
+    padding: 50px 70px;
+    border-top: 4px solid var(--primary);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+}
+
+.tilbage:hover {
+    opacity: 0.8 !important;
+}
+
+.tilbage:hover .tilbageP {
+    opacity: 1 !important;
+}
+
+.tilbageP {
+    font-size: 12px;
+    color: var(--secondary);
+    font-family: Inter;
+    font-weight: 400;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.logoContainer {
+    max-width: 560px;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    gap: 5px;
+    padding-bottom: 10px;
+}
+
+.logoContainerLink {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo {
+    height: 50px;
+    height: 50px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.logoH1 {
+    font-family: ZonaSemi;
+    color: var(--secondary);
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.signupH1 {
+    color: var(--secondary);
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.signupElement {
+    padding: 20px 0px;
+}
+
+.signupH2 {
+    color: var(--secondary);
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    opacity: 0.8;
+    padding-bottom: 25px;
+}
+
+.signupH3 {
+    color: var(--secondary);
+    font-size: 12px;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    font-family: Inter;
+    font-weight: 400;
+}
+
+.method {
+    color: var(--secondary);
+    font-size: 13px;
+    opacity: 0.8;
+    padding: 10px;
+    font-family: Inter;
+    font-weight: 400;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    font-size: 14px;
+    color: var(--secondary);
+    border-radius: 7px;
+    border: 1px solid #D7DBEC;
+    height: 50px;
+    padding: 0px 15px;
+}
+
+.input:focus {
+    border-color: var(--primary) !important;
+}
+
+.multiInput {
+    border: 0px;
+    overflow: hidden;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.ctaMain {
+    padding: 11px 17px;
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+    background-color: var(--third);
+    transition: 0.2s;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.ctaMain span {
+    z-index: 1;
+    position: relative;
+    color: var(--primary);
+    font-weight: 500;
+    font-family: Inter;
+    font-size: 14px;
+}
+
+.ctaMain::before {
+    content: "";
+    position: absolute;
+    top: var(--y);
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    transition: width 0.5s, height 0.5s;
+    border-radius: 50%;
+    background-color: var(--primary);
+}
+
+.ctaMain:hover::before {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.ctaMain:hover .ctaMainDivider {
+    color: #fff;
+}
+
+.ctaMain:hover span {
+    color: #fff;
+}
+
+.ctaMain:hover .ctaMainDividerBefore {
+    background-color: #fff;
+}
+
+.ctaMainDivider {
+    color: var(--primary);
+    opacity: 0.7;
+    font-weight: 400;
+    font-family: Inter;
+    font-size: 15px;
+}
+  
+.ctaMainDividerBefore {
+    width: 15px;
+    height: 1px;
+    background-color: var(--primary);
+    opacity: 0.4;
+    margin: 0px 5px;
+}
+
+.heroCta__container {
+    width: 100%;
+}
+
+.heroCta__cta__container {
+    display: flex;
+    gap: 15px;
+}
+
+.heroCta__cta__container span {
+    width: 100%;
+}
+
+.heroCta__img {
+    height: 18px;
+    width: 18px;
+}
+
+.googleBtn__container {
+    width: 100%;
+    background-color: #eff1f7;
+    border-radius: 4px;
+    border: 0px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.googleBtn__container span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.googleBtn__btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    display: block;
+    z-index: 9;
+    background-color: transparent !important;
+    width: 100%;
+    height: 100%;
+    box-shadow: none !important;
+}
+
+.googleBtn__icon {
+    width: 16px;
+    height: 16px;
+}
+
+.heroCta__cta__btn {
+    width: 100%;
+    padding: 15px 24px;
+    box-shadow: none !important;
+    background-color: #eff1f7 !important;
+    border-radius: 4px !important;
+    border: 0px;
+    cursor: pointer;
+    color: var(--secondary) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500 !important;
+    gap: 8px;
+    font-size: 15px !important;
+    opacity: 1 !important;
+}
+
+.heroCta__main__btn {
+    width: 100%;
+    padding: 0px 24px;
+    height: 50px;
+    background-color: var(--primary);
+    border-radius: 7px;
+    border: 0px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    overflow: hidden;
+    transition: 0.35s;
+    position: relative;
+}
+
+.heroCta__main__btn span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.heroCta__main__btn span {
+    z-index: 2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+  
+.heroCta__main__btn::before {
+    content: "";
+    position: absolute;
+    top: var(--y);
+    left: -50px;
+    width: 23px;
+    height: 20px;
+    transition: width 0.6s, height 0.6s;
+    border-radius: 50%;
+    background-color: var(--primaryAccent);
+}
+  
+.heroCta__main__btn:hover::before {
+    width: 700px;
+    height: 700px;
+    border-radius: 5px;
+}
+
+.heroCta__divider {
+    display: flex;
+    align-items: center;
+    padding: 15px 0px;
+    gap: 10px;
+}
+
+.heroCta__divider__line {
+    width: 100%;
+    height: 1.5px;
+    background-color: #ebebeb;
+}
+
+.heroCta__divider__p {
+    font-size: 14px;
+    color: #999;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+.error__message {
+    font-family: Inter;
+    font-weight: 400;
+    color: var(--red);
+    font-size: 14px;
+    padding-bottom: 15px;
+}

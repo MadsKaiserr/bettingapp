@@ -4,7 +4,6 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 import { getKupon, getString } from "../services/algo.js";
-import StageHeader from '../layout/stageheader';
 import Height from '../components/height';
 import { getUser } from "../services/authService";
 import cookie from 'js-cookie'
@@ -59,10 +58,9 @@ function StageNotifikationer () {
     return (
         <>
             <Head>
-                <title>Notifikationer - Tipsspillet</title>
+                <title>Notifikationer - Fantasybetting</title>
                 <meta name="robots" content="noindex" />
             </Head>
-            <StageHeader />
             <div className="op-container" style={{background: "var(--surface)"}}>
                 {nav === "generelt" && <div className="op-content">
                     <p className="op-h1">Notifikationer</p>

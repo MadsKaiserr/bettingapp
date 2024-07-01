@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Head from 'next/head'
-import Header from './layout/header';
+import Header from './layout/header.tsx';
 import { useState, useEffect } from 'react';
 import axios from "axios";
 
@@ -54,16 +54,16 @@ function Kontakt() {
     return (
         <>
             <Head>
-                <title>Kontakt - Tipsspillet</title>
-                <link rel="canonical" href="https://www.tipsspillet.dk/kontakt" />
-                <meta name="description" content="Kontaktside for Tipsspillet - Få svar på spørgsmål du ikke finder på siden, anmeld fejl eller kom i kontakt med os." />
+                <title>Kontakt - Fantasybetting</title>
+                <link rel="canonical" href="https://www.Fantasybetting.dk/kontakt" />
+                <meta name="description" content="Kontaktside for Fantasybetting - Få svar på spørgsmål du ikke finder på siden, anmeld fejl eller kom i kontakt med os." />
                 <meta name="author" content="Mads Kaiser" />
-                <meta name="keywords" content="tipsspillet kontakt, kontakt,kontakt tipsspillet,tipsspillet hjælp,kontaktside" />
-                <meta itemProp="name" content="Tipsspillet Kontakt" />
-                <meta itemProp="description" content="Kontaktside for Tipsspillet - Få svar på spørgsmål du ikke finder på siden, anmeld fejl eller kom i kontakt med os." />
-                <meta property="og:title" content="Kontakt - Tipsspillet" />
-                <meta property="og:url" content="https://www.tipsspillet.dk/kontakt" />
-                <meta property="og:description" content="Kontaktside for Tipsspillet - Få svar på spørgsmål du ikke finder på siden, anmeld fejl eller kom i kontakt med os." />
+                <meta name="keywords" content="Fantasybetting kontakt, kontakt,kontakt Fantasybetting,Fantasybetting hjælp,kontaktside" />
+                <meta itemProp="name" content="Fantasybetting Kontakt" />
+                <meta itemProp="description" content="Kontaktside for Fantasybetting - Få svar på spørgsmål du ikke finder på siden, anmeld fejl eller kom i kontakt med os." />
+                <meta property="og:title" content="Kontakt - Fantasybetting" />
+                <meta property="og:url" content="https://www.Fantasybetting.dk/kontakt" />
+                <meta property="og:description" content="Kontaktside for Fantasybetting - Få svar på spørgsmål du ikke finder på siden, anmeld fejl eller kom i kontakt med os." />
             </Head>
             <Header />
             {modal && <div className="modal-test">
@@ -78,7 +78,7 @@ function Kontakt() {
                 <div className="main-block-container">
                     <div className="hero-text">
                         <h3 className="cp-h3 animation-fadeleft">Kom i kontakt med os</h3>
-                        <h1 className="cp-h1 animation-fadeleft animation-delay-200">Kontakt Tipsspillet</h1>
+                        <h1 className="cp-h1 animation-fadeleft animation-delay-200">Kontakt Fantasybetting</h1>
                         <h2 className="cp-h2 animation-fadetop animation-delay-300">Få svar på dine spørgsmål, og kom i <span className="color-primary font-weight-500">kontakt</span> direkte med os.</h2>
                     </div>
                 </div>

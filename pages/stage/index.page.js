@@ -6,16 +6,15 @@ import { getKupon, getString } from "../services/algo.js";
 import { DayPicker } from 'react-day-picker';
 import da from 'date-fns/locale/da';
 import 'react-day-picker/dist/style.css';
-import Congrats from '../img/congrats.svg';
+import Congrats from '../assets/img/congrats.svg';
 import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
-import StageHeader from '../layout/stageheader';
 import Height from '../components/height';
 import { useRouter } from 'next/router'
 import cookie from 'js-cookie'
-import GrMatchMock from '../img/GruppespilMockup.jpg';
-import GrMatchMockMB from '../img/IphoneGruppespilMockup.jpg';
+import GrMatchMock from '../assets/img/GruppespilMockup.jpg';
+import GrMatchMockMB from '../assets/img/IphoneGruppespilMockup.jpg';
  
 function StageForside ({gruppespil_data, spiller_data}) {
     const router = useRouter()
@@ -385,23 +384,12 @@ function StageForside ({gruppespil_data, spiller_data}) {
         }
     }
 
-    function updateUdbetaling(type, oddsSend, indsats) {
-        if (type === "kombination") {
-            var indsatsValue = document.getElementById("indsatsInput").value;
-            if (!indsatsValue) {
-                setUdbetaling(0);
-            } else {
-                setUdbetaling(returnOdds * parseInt(indsatsValue));
-            }
+    function updateUdbetaling(type) {
+        var indsatsValue = document.getElementById("indsatsInput").value;
+        if (!indsatsValue) {
+            setUdbetaling(0);
         } else {
-            var totalUdbetaling = 0;
-            for (var q in odds) {
-                var dc = document.getElementById("singleindsats"+odds[q].match+"-"+odds[q].odds_result);
-                if (dc.value !== "" && dc.value !== null && dc.value !== undefined) {
-                    totalUdbetaling = totalUdbetaling + (parseFloat(dc.value) * parseFloat(odds[q].probability));
-                }
-            }
-            setSingleUdbetaling(totalUdbetaling);
+            setUdbetaling(returnOdds * parseInt(indsatsValue));
         }
     }
 
@@ -3048,10 +3036,9 @@ function StageForside ({gruppespil_data, spiller_data}) {
     return (
         <>
         <Head>
-            <title>Betting - Tipsspillet</title>
+            <title>Betting - Fantasybetting</title>
             <meta name="robots" content="noindex" />
         </Head>
-        <StageHeader />
         <div className="height-fix2">
         </div>
         {confirmModal && <div>
@@ -3119,7 +3106,7 @@ function StageForside ({gruppespil_data, spiller_data}) {
                         <div className="wc-trans"></div>
                     </div>
                     <div className="wc-content">
-                        <p className="wc-h2">Hvor tilfreds er du med Tipsspillet indtil videre?</p>
+                        <p className="wc-h2">Hvor tilfreds er du med Fantasybetting indtil videre?</p>
                         {feedbackBox === 0 && <div className="wc-1-5">
                             <div className="wc-1-5-element" onClick={() => setFeedbackBox(1)}>1</div>
                             <div className="wc-1-5-element" onClick={() => setFeedbackBox(2)}>2</div>
@@ -3498,7 +3485,7 @@ function StageForside ({gruppespil_data, spiller_data}) {
                         </div>
                         {activeGame !== "1663746422584-482" && <div className="stage-main-small-section" style={{borderTop: "4px solid var(--primary)"}}>
                             <div className="ad-con">
-                                <p className="as-h1" style={{fontSize: "22px"}}>Tipsspillet Præmiedyst</p>
+                                <p className="as-h1" style={{fontSize: "22px"}}>Fantasybetting Præmiedyst</p>
                                 <p className="as-h2">Vind gavekort til Intersport op til 1000,-</p>
                                 {/* <p className="as-h2">Spillet slutter 14/11/2022</p> */}
                                 <div className="hero-info" style={{marginTop: "20px"}}>

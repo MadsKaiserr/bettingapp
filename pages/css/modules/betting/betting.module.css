@@ -1,0 +1,668 @@
+.container {
+    padding: 24px 7%;
+    display: flex;
+    gap: 1%;
+    width: 100%;
+    background-color: var(--background);
+    min-height: 600px;
+    padding-bottom: 100px;
+}
+
+.sectionContainer {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 15px !important;
+}
+
+.tipP {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--black);
+    opacity: 0.8;
+}
+
+.tipElement {
+    padding: 15px 20px;
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+}
+
+.ctaSection {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    border-top: var(--primary) solid 4px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    padding: 30px 30px;
+}
+
+.ctaH1 {
+    font-size: 28px;
+    font-family: Inter;
+    font-weight: 600;
+    color: var(--softBlack);
+    margin-bottom: 5px;
+}
+
+.ctaP {
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 300;
+    z-index: 1;
+    position: relative;
+    color: var(--softBlack);
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.ctaBtn {
+    padding: 13px 35px;
+    border-radius: 500px;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 25px;
+    border: 0px;
+    font-weight: 500;
+    white-space: nowrap;
+    font-family: Inter;
+    cursor: pointer;
+    transition: 0.2s;
+    background: var(--primary);
+}
+
+.ctaBtn:hover {
+    background: var(--primaryAccent);
+}
+
+.kampeSection {
+    width: 100%;
+    gap: 1%;
+    display: flex
+}
+
+.infoSection {
+    width: 26%;
+    gap: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.mainKampe {
+    width: 65%;
+    border-radius: 1px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 5px;
+    vertical-align: top;
+}
+
+.sideContainer {
+    width: 34%;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
+    display: flex;
+    position: relative;
+    gap: 10px;
+    flex-direction: column;
+    padding-bottom: 15px !important;
+}
+
+.dateHeader {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0px 10px;
+    justify-content: center;
+    height: 45px;
+}
+
+.mainNav {
+    display: flex;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.mainMenu {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.kampeTop {
+    width: 100%;
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    cursor: default;
+    justify-content: space-between;
+}
+
+.mainNavElement {
+    padding: 6px 15px;
+    border-radius: 500px;
+    font-size: 13px;
+    color: var(--softBlack);
+    font-weight: 400;
+}
+
+.mainNavElementActive {
+    padding: 6px 15px;
+    border-radius: 500px;
+    font-size: 13px;
+    color: #fff;
+    background-color: var(--primary);
+    font-weight: 500;
+}
+
+.kampeH1 {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 15px;
+    display: inline-block;
+    color: var(--softBlack);
+}
+
+.sectionTop {
+    display: flex;
+    padding: 5px 20px;
+    padding-top: 15px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tipOdds {
+    text-align: right;
+}
+
+.tipContent {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.tipH1 {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 15px;
+    padding-bottom: 0px !important;
+    color: var(--black);
+}
+
+.tipH2 {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 5px !important;
+    color: var(--primary);
+}
+
+.tipH3 {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 8px 0px;
+    padding-top: 0px !important;
+    color: var(--black);
+    opacity: 0.8;
+}
+
+.tipBtnUsed {
+    width: 50px;
+    padding: 6px 0px;
+    background-color: #f8e325;
+    border-radius: 2px;
+    color: #333 !important;
+    border: 0px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: 0.2s;
+}
+
+.tipBtnUsed:hover {
+    background-color: #ecd92d;
+}
+
+.tipBtn {
+    width: 50px;
+    padding: 6px 0px;
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 2px;
+    border: 0px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: 0.2s;
+}
+
+.tipBtn:hover {
+    background-color: var(--primaryAccent);
+}
+
+.sectionTopRight {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.skeletonWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skeletonElement {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.tipContainer {
+    padding-top: 10px;
+    width: 100%;
+}
+
+.sectionTopRight:hover {
+    opacity: 1;
+}
+
+.sectionTopA {
+    font-size: 12px;
+    color: var(--primary);
+    font-weight: 400;
+}
+
+.sectionIcon {
+    width: 18px;
+    height: 18px;
+    fill: var(--primary);
+}
+
+.nogames {
+    font-weight: 400;
+    font-size: 15px;
+    opacity: 0.9;
+    padding: 0px 20px;
+    color: var(--softBlack);
+    font-family: Inter;
+}
+
+.sideMenu {
+    width: 20%;
+    margin-right: 15px;
+    gap: 35px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidemenuWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.sidemenuH1 {
+    font-family: Inter;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: var(--softBlack);
+}
+
+.favH1 {
+    font-family: Inter;
+    font-weight: 600;
+    padding: 14px 20px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    color: var(--softBlack);
+}
+
+.sidemenuElement {
+    padding: 6.5px 25px;
+    display: flex;
+    align-items: center;
+    gap: 8.5px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 3px;
+}
+
+.sidemenuElement:hover {
+    background-color: var(--surface);
+}
+
+.sidemenuImg {
+    position: relative;
+    width: 26px;
+    height: 26px;
+}
+
+.sidemenuH2 {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--softBlack);
+}
+
+.sidemenuInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5px;
+    justify-content: space-between;
+}
+
+.sidemenuP {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 11px;
+    color: var(--softBlack);
+    opacity: 0.7;
+}
+
+.middle {
+    width: 73%;
+}
+
+.idwrapper {
+    width: 100%;
+    height: 200px;
+    background-color: var(--primary);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.kuponContainer {
+    display: inline-block;
+    transition: 0.3s;
+    z-index: 11;
+    background-color: #fff;
+    border-top: 4px var(--primary) solid;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 150px;
+    vertical-align: top;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
+}
+
+.kuponInfo {
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.kuponBtn {
+    padding: 9px 0px;
+    width: 100%;
+    background-color: var(--primary);
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0px;
+    margin-top: 5px;
+    transition: 0.2s;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kuponBtn span {
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.kuponBtn::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    width: 10px;
+    height: 10px;
+    transition: width 0.5s, height 0.5s;
+    border-radius: 100px;
+    background-color: var(--primaryAccent);
+}
+
+.kuponBtn:hover::before {
+    width: calc(100% + 20px);
+    height: 300px;
+    border-radius: 5px;
+}
+
+.indsatsContainer {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    margin: 5px 0px;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.65);
+}
+
+.kuponInput {
+    width: 100%;
+    height: 100%;
+    padding: 0px 15px;
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+    background-color: transparent;
+    border: 0px;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.indsatsP {
+    color: var(--softBlack);
+    opacity: 0.7;
+    font-weight: 500;
+    font-size: 13px;
+    z-index: 1;
+    position: absolute;
+    right: 15px;
+}
+
+.kuponWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3px 0px;
+}
+
+.kuponInfoWrapper {
+    padding: 5px 0px;
+}
+
+.kuponP {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--softBlack);
+}
+
+.kuponB {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+.kuponInput::-webkit-outer-spin-button,
+.kuponInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.kuponInput[type=number] {
+  -moz-appearance: textfield;
+}
+
+.betContainer {
+    max-height: 40vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.betWrapper {
+    position: relative;
+    width: calc(100% - 26px);
+    background-color: var(--surface);
+    border-radius: 5px;
+    padding: 12px 15px;
+    margin: 0px 13px;
+}
+
+.betOdd {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.kuponH1 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.kuponH1B {
+    font-weight: 600;
+}
+
+.kuponH2 {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--softBlack);
+    opacity: 0.7;
+}
+
+.kuponH3 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+    padding-top: 3px;
+}
+
+.kuponClose {
+    width: 20px;
+    height: 20px;
+    fill: var(--black);
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.modalBg {
+    z-index: 19;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.modalContainer {
+    width: 350px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.modalH1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    padding-bottom: 10px;
+}
+
+.modalP {
+    font-weight: 400;
+    color: var(--softBlack);
+    font-size: 14px;
+}
+
+.modalCTA {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.modal2ndBtn {
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #fff;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,1);
+    color: var(--softBlack);
+    font-weight: 500;
+    font-size: 13px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.modal1stBtn {
+    width: 100%;
+    padding: 10px 0px;
+    background-color: var(--primary);
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.modal1stBtn:hover {
+    background-color: var(--primaryAccent);
+}
