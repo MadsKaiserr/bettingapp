@@ -136,8 +136,8 @@ function StageIndstillinger ({data}) {
                 }
         
                 const requestBody = {
-                    email: getUser().email,
-                    navn: getUser().username,
+                    email: "",
+                    navn: "",
                     subscription: "plus" + priceInterval
                 }
 
@@ -168,8 +168,8 @@ function StageIndstillinger ({data}) {
         }
 
         const requestBody = {
-            email: getUser().email,
-            navn: getUser().username,
+            email: "",
+            navn: "",
             subscription: ugAb + priceInterval,
             subid: subId
         }
@@ -234,8 +234,8 @@ function StageIndstillinger ({data}) {
                 }
         
                 const requestBody = {
-                    email: getUser().email,
-                    navn: getUser().username,
+                    email: "",
+                    navn: "",
                     subscription: "premium" + priceInterval
                 }
                 axios.post(URL, requestBody, requestConfig).then(response => {
@@ -368,7 +368,7 @@ function StageIndstillinger ({data}) {
         }
 
         const requestBody2 = {
-            email: [getUser().email],
+            email: [""],
             template: "anbefalet"
         }
 
@@ -401,7 +401,7 @@ function StageIndstillinger ({data}) {
     
             const requestBody2 = {
                 name: navn,
-                email: getUser().email,
+                email: "",
                 username: usernameField,
                 handlinger: handlinger
             }
@@ -453,7 +453,7 @@ function StageIndstillinger ({data}) {
             }
     
             const requestBody2 = {
-                email: getUser().email,
+                email: "",
                 notifikationer: {
                     "invi": notiInvi,
                     "kupon": notiKupon,

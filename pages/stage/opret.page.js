@@ -80,7 +80,7 @@ function Opret ({ }) {
         e.preventDefault()
         setLoading(true)
         const signupURL = "https://1ponivn4w3.execute-api.eu-central-1.amazonaws.com/api/gruppesession";
-        const user_email = getUser().email;
+        const user_email = "";
         if (((spilMax > 0 && maksSetting) || (!maksSetting)) && ((spilSynlighed === "privat" && password !== "") || (spilSynlighed === "offentlig")) && ((spilMin >= 0 && minSetting) || (!minSetting)) && spilNavn !== "" && spilVarighed !== "" && spilStart >=0 && ((indskydelse >= 0 && indskydelseSetting) || (!indskydelseSetting))) {
             setMessage("");
             const URL = "https://1ponivn4w3.execute-api.eu-central-1.amazonaws.com/api/playergruppespil?player=" + user_email;
@@ -111,10 +111,10 @@ function Opret ({ }) {
                 var userEmail;
                 var username;
                 
-                if (getUser().email) {
+                if ("") {
                     medlemsskab = getUser().rolle;
-                    userEmail = getUser().email;
-                    username = getUser().username;
+                    userEmail = "";
+                    username = "";
                 } else {
                     medlemsskab = "none";
                     userEmail = "Ukendt";
@@ -130,7 +130,7 @@ function Opret ({ }) {
                     indskydelse_int: 0,
                     indskydelse_amount: 0,
                     ligaer: [],
-                    admin: getUser().username,
+                    admin: "",
                     synlighed: spilSynlighed,
                     password: "",
                     players: [{player: userEmail, username: username, info: {money: parseInt(spilStart), notifikationer: [], transaktioner: [{"iat": new Date().getTime(),"description": "Startbeløb","amount": parseInt(spilStart),"type": "add"}], medlemsskab: medlemsskab}, odds: []}]

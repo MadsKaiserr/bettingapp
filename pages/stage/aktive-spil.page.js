@@ -17,7 +17,7 @@ function StageAktiveSpil ({ data }) {
         console.log("AWS - Gruppespil:", data)
         var myArray = [];
         for (var q in data.newGruppespil) {
-            if (data.newGruppespil[q].players.findIndex(obj => obj.player === getUser().email) >= 0) {
+            if (data.newGruppespil[q].players.findIndex(obj => obj.player === "") >= 0) {
                 myArray.push(data.newGruppespil[q]);
             }
         }
@@ -98,7 +98,7 @@ function StageAktiveSpil ({ data }) {
     }
 
     function billetHandler() {
-        const user_email = getUser() ? getUser().email : "";
+        const user_email = getUser() ? "" : "";
         const URL = "https://1ponivn4w3.execute-api.eu-central-1.amazonaws.com/api/adgangsbilletter?player=" + user_email;
         const requestConfig = {
             headers: {
@@ -218,10 +218,10 @@ function StageAktiveSpil ({ data }) {
                         <div className="match-loader display" id="stage-loader1"></div>
                         <ul className="td-table" style={{maxHeight: "none", gap: "10px"}}>
                             {search.map((item) => {
-                                const index = item.players.findIndex(obj => obj.player === getUser().email);
+                                const index = item.players.findIndex(obj => obj.player === "");
                                 var activeKupon = 0;
                                 for (var u in item.players) {
-                                    if (item.players[u].player === getUser().email) {
+                                    if (item.players[u].player === "") {
                                         for (var q in item.players[u].odds) {
                                             if (item.players[u].odds[q].calculated === "false") {
                                                 activeKupon = activeKupon + 1;
@@ -232,7 +232,7 @@ function StageAktiveSpil ({ data }) {
                                 var position = 0;
                                 var topScorers = getTopN(item.players, item.players.length);
                                 topScorers.forEach(function(gameItem, index2) {
-                                    if (gameItem.player === getUser().email) {
+                                    if (gameItem.player === "") {
                                         position = index2 + 1;
                                     }
                                 });

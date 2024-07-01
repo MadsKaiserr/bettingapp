@@ -29,7 +29,7 @@ function GruppespilIndstillinger ({data}) {
         setGsIndskydelse(data.indskydelse_amount);
         setGsSynlighed(data.synlighed);
         setGsId(data.id);
-        if (data.admin === getUser().username) {
+        if (data.admin === "") {
             setAllowed(true);
         }
     }, [])

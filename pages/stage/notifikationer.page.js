@@ -28,7 +28,7 @@ function StageNotifikationer () {
             axios.get(URL, requestConfigen).then(response => {
                 console.log("AWS - Notifikationer:", response);
                 for (var i in response.data.players) {
-                    if (response.data.players[i].player === getUser().email) {
+                    if (response.data.players[i].player === "") {
                         setItems(response.data.players[i].info.notifikationer);
                         if (response.data.players[i].info.notifikationer.length > 0) {
                             setErrorText("");

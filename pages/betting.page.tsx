@@ -102,7 +102,7 @@ function Betting({gruppespil_data, spiller_data}) {
             setActiveGameSlutdato(slutStringDay + "/" + slutStringMonth + "/" + slutStringYear);
 
             for (var k in gruppespil_data.data.players) {
-                // if (gruppespil_data.data.players[k].email === getUser().email) {
+                // if (gruppespil_data.data.players[k].email === "") {
                 //     // localStorage.setItem("notifikationer", gruppespil_data.players[k].info.notifikationer.length);
                 // }
                 //Calculate wins i gruppespillet
@@ -140,7 +140,7 @@ function Betting({gruppespil_data, spiller_data}) {
             weekCount = weekCount / 1000 / 60 / 60 / 24 / 7;
             var topScorers = getTopN(gruppespil_data.data.players, n);
             topScorers.forEach(function(gameItem, index) {
-                if (gameItem.email === getUser()["email"]) {
+                if (gameItem.email === "") {
                     if (Math.floor(weekCount) <= gruppespil_data.eco.indskydelseInt) {
                         setActiveGameMoney(gameItem.info.money)
                     }
@@ -168,7 +168,7 @@ function Betting({gruppespil_data, spiller_data}) {
                 axios.patch(betCalcURL, winBody, requestConfig).then(responseTem => {
                     console.log("AWS - Indskydelse:", responseTem, winBody);
                     for (var i in responseTem.data.Item.Attributes.data.players) {
-                        if (responseTem.data.Item.Attributes.data.players[i].email === getUser()["email"]) {
+                        if (responseTem.data.Item.Attributes.data.players[i].email === "") {
                             setActiveGameMoney(responseTem.data.players[i].info.money);
                         }
                     }
@@ -1113,9 +1113,10 @@ function Betting({gruppespil_data, spiller_data}) {
             }
         }
 
+        //PLAYER SKAL VÆRE GETUSER
         var betData = {
             gruppespil: cookie.get("activeGame"),
-            player: getUser().email,
+            player: "",
             updateValue: {
                 data: {
                     calculated: false,

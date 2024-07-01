@@ -15,12 +15,12 @@ function StageGruppespil ({data}) {
             setActiveGame(true);
         }
         if (data) {
-            if (data.admin === getUser().email) {
+            if (data.admin === "") {
                 setAdminUser(true)
             }
             setGruppesessionData(data)
         }
-        setBrugernavn(getUser().username)
+        setBrugernavn("")
     }, [])
 
     const [activeGame, setActiveGame] = useState(false)
@@ -151,7 +151,7 @@ function StageGruppespil ({data}) {
     //         var newTableArray = [];
     //         var myPlayer = [];
     //         for (var k in gruppesessionData.data.players) {
-    //             if (data.players[k].player === getUser().email) {
+    //             if (data.players[k].player === "") {
     //                 myPlayer = data.players[k].odds;
     //                 setGameAdmin(data.admin);
     //                 setTransaktioner(data.players[k].info.transaktioner)
@@ -205,7 +205,7 @@ function StageGruppespil ({data}) {
     //             setTableArray(newTableArray => [...newTableArray, item]);
     //         });
     //         setLoadingText("")
-    //         if (data.admin === getUser().username) {
+    //         if (data.admin === "") {
     //             setAdminUser(true);
     //         }
     //     } else {
@@ -267,7 +267,7 @@ function StageGruppespil ({data}) {
         if (beskederLength >= 5) {
             return beskeder.slice(beskederLength - 5,beskederLength).map((item) => {
             var nameVar = "chat-name";
-            if (item.name === getUser().username) {
+            if (item.name === "") {
                 nameVar = "chat-name-active";
             }
 
@@ -326,7 +326,7 @@ function StageGruppespil ({data}) {
         )} else {
             return beskeder.slice(0,5).map((item) => {
                 var nameVar = "chat-name";
-                if (item.name === getUser().username) {
+                if (item.name === "") {
                     nameVar = "chat-name-active";
                 }
     
@@ -622,7 +622,7 @@ function StageGruppespil ({data}) {
 
                                         var trueMe = "";
                                         if (getUser()) {
-                                            if (getUser().email === item.player) {
+                                            if ("" === item.player) {
                                                 trueMe = "tabel-correct";
                                             }
                                         }
@@ -651,7 +651,7 @@ function StageGruppespil ({data}) {
                                                     </li>
                                                 );
                                             }
-                                            if (getUser().email === item.player && index > 7 && index < (tableArray.length - 3)) {
+                                            if ("" === item.player && index > 7 && index < (tableArray.length - 3)) {
                                                 return (<>
                                                     <div className="table-divider"></div>
                                                     <div className="table-divider"></div>

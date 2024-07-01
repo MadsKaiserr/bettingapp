@@ -65,11 +65,12 @@ function Aktivespil({data}) {
     }
 
     function opretSpilHandler() {
-        if (getUser().rolle !== "none") {
-            router.push("/betting/opret")
-        } else {
-            router.push("/priser")
-        }
+        // if (getUser().rolle !== "none") {
+        //     router.push("/betting/opret")
+        // } else {
+        //     router.push("/priser")
+        // }
+        router.push("/priser")
     }
 
     const [currentType, setCurrentType] = useState("alle");
@@ -121,11 +122,11 @@ function Aktivespil({data}) {
                     <div className="td-wrapper">
                         <div className="match-loader display" id="stage-loader1"></div>
                         <ul className="td-table" style={{maxHeight: "none", gap: "10px"}}>
-                            {search.map((item) => {
-                                const index = item.data.players.findIndex(obj => obj.email === getUser().email);
+                            {/* {search.map((item) => {
+                                const index = item.data.players.findIndex(obj => obj.email === "");
                                 var activeKupon = 0;
                                 for (var u in item.data.players) {
-                                    if (item.data.players[u].email === getUser().email) {
+                                    if (item.data.players[u].email === "") {
                                         for (var q in item.data.players[u].kuponer) {
                                             if (item.data.players[u].kuponer[q].calculated === "false") {
                                                 activeKupon = activeKupon + 1;
@@ -136,7 +137,7 @@ function Aktivespil({data}) {
                                 var position = 0;
                                 var topScorers = getTopN(item.data.players, item.data.players.length);
                                 topScorers.forEach(function(gameItem, index2) {
-                                    if (gameItem.email === getUser().email) {
+                                    if (gameItem.email === "") {
                                         position = index2 + 1;
                                     }
                                 });
@@ -205,7 +206,7 @@ function Aktivespil({data}) {
                                         return returnable;
                                     }
                                 }
-                            })}
+                            })} */}
                             {currentType === "alle" && <>
                                 {search.length === 0 && <>
                                     <div className="td-empty-container">

@@ -113,7 +113,8 @@ function Gruppesession ({data, allowed}) {
             
                     axios.post(loginURL, requestBody, requestConfig).then(response => {
                         console.log("AWS - Gruppespil Login:", response);
-                        if ((yourIndex === -1 && varighedDate > nowDate) && getUser().rolle) {
+                        //&& getUser().rolle
+                        if ((yourIndex === -1 && varighedDate > nowDate)) {
                             console.log(activeGame)
                             const tilmeldUrl = "https://1ponivn4w3.execute-api.eu-central-1.amazonaws.com/api/gruppesession";
                 
@@ -127,16 +128,20 @@ function Gruppesession ({data, allowed}) {
                             var medlemsskab;
                             var userEmail;
                             var username;
+
+                            medlemsskab = "none";
+                            userEmail = "Ukendt";
+                            username = "Ukendt";
                             
-                            if (getUser().rolle) {
-                                medlemsskab = getUser().rolle;
-                                userEmail = cookie.get("email");
-                                username = getUser().username;
-                            } else {
-                                medlemsskab = "none";
-                                userEmail = "Ukendt";
-                                username = "Ukendt";
-                            }
+                            // if (getUser().rolle) {
+                            //     medlemsskab = getUser().rolle;
+                            //     userEmail = cookie.get("email");
+                            //     username = "";
+                            // } else {
+                            //     medlemsskab = "none";
+                            //     userEmail = "Ukendt";
+                            //     username = "Ukendt";
+                            // }
                             var fbLogo = "";
                             if (cookie.get("fbLogin")) {
                                 fbLogo = JSON.parse(cookie.get("fbLogin")).id;
@@ -178,9 +183,10 @@ function Gruppesession ({data, allowed}) {
                                 // setNotiMessage("error", "Deltager allerede", "Det ser ud til, at du allerede deltager i dette gruppespil.");
                             } else if (varighedDate < nowDate) {
                                 // setNotiMessage("error", "Gruppespil slut", "Gruppespil er desværre allerede færdiggjort");
-                            } else if (!getUser().rolle) {
-                                router.push("/login");
                             }
+                            // else if (!getUser().rolle) {
+                            //     router.push("/login");
+                            // }
                         }
                     }).catch(error => {
                         console.log(error);
@@ -202,16 +208,20 @@ function Gruppesession ({data, allowed}) {
                         var medlemsskab;
                         var userEmail;
                         var username;
+
+                        medlemsskab = "none";
+                        userEmail = "Ukendt";
+                        username = "Ukendt";
                         
-                        if (getUser().rolle) {
-                            medlemsskab = getUser().rolle;
-                            userEmail = cookie.get("email");
-                            username = getUser().username;
-                        } else {
-                            medlemsskab = "none";
-                            userEmail = "Ukendt";
-                            username = "Ukendt";
-                        }
+                        // if (getUser().rolle) {
+                        //     medlemsskab = getUser().rolle;
+                        //     userEmail = cookie.get("email");
+                        //     username = "";
+                        // } else {
+                        //     medlemsskab = "none";
+                        //     userEmail = "Ukendt";
+                        //     username = "Ukendt";
+                        // }
                         var fbLogo = "";
                         if (cookie.get("fbLogin")) {
                             fbLogo = JSON.parse(cookie.get("fbLogin")).id;

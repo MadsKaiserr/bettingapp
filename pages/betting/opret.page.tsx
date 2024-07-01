@@ -61,8 +61,8 @@ function Opret ({ }) {
                 },
                 password: undefined
             },
-            user: getUser().email,
-            username: getUser().username
+            user: "",
+            username: ""
         }
 
         if (spilSynlighed === "privat") {

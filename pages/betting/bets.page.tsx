@@ -26,11 +26,11 @@ function Betting() {
 
         axios.get(URL, requestConfig).then(response => {
             console.log("AWS - Gruppesession:", response);
-            var oddArray = response.data.data.players[response.data.data.players.findIndex(obj => obj.email === getUser().email)].kuponer;
-            oddArray.sort((a, b) => {
-                return b.data.iat - a.data.iat;
-            });
-            setItems(oddArray)
+            // var oddArray = response.data.data.players[response.data.data.players.findIndex(obj => obj.email === "")].kuponer;
+            // oddArray.sort((a, b) => {
+            //     return b.data.iat - a.data.iat;
+            // });
+            // setItems(oddArray)
         }).catch(error => {
             console.log("Fejl ved indhentning af data" + error)
         })

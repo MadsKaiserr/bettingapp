@@ -182,9 +182,10 @@ function Match({data}) {
                             }
                         }
     
+                        //""
                         const requestBody = {
                             "data": storage,
-                            "email": getUser().email
+                            "email": ""
                         }
                         axios.post(signupURL, requestBody, requestConfig).then(response => {
                             console.log("AWS - Favoritter:", response);
@@ -211,9 +212,10 @@ function Match({data}) {
                             }
                         }
     
+                        //""
                         const requestBody = {
                             "data": storageDiv,
-                            "email": getUser().email
+                            "email": ""
                         }
                         axios.post(signupURL, requestBody, requestConfig).then(response => {
                             console.log("AWS - Favoritter:", response);
@@ -240,9 +242,10 @@ function Match({data}) {
                             }
                         }
     
+                        //""
                         const requestBody = {
                             "data": storage,
-                            "email": getUser().email
+                            "email": ""
                         }
                         axios.post(signupURL, requestBody, requestConfig).then(response => {
                             console.log("AWS - Favoritter:", response);
@@ -280,9 +283,10 @@ function Match({data}) {
                             }
                         }
     
+                        //""
                         const requestBody = {
                             "data": storage,
-                            "email": getUser().email
+                            "email": ""
                         }
                         axios.post(signupURL, requestBody, requestConfig).then(response => {
                             console.log("AWS - Favoritter:", response);
@@ -309,9 +313,10 @@ function Match({data}) {
                             }
                         }
     
+                        //""
                         const requestBody = {
                             "data": storageDiv,
-                            "email": getUser().email
+                            "email": ""
                         }
                         axios.post(signupURL, requestBody, requestConfig).then(response => {
                             console.log("AWS - Favoritter:", response);
@@ -338,9 +343,10 @@ function Match({data}) {
                             }
                         }
     
+                        //""
                         const requestBody = {
                             "data": storage,
-                            "email": getUser().email
+                            "email": ""
                         }
                         axios.post(signupURL, requestBody, requestConfig).then(response => {
                             console.log("AWS - Favoritter:", response);

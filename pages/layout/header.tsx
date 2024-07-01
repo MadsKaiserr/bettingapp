@@ -24,8 +24,8 @@ function Header () {
     useEffect(() => {
         if (getUser()) {
             setLoggedIn(true)
-            setUsername(getUser().username)
-            setEmail(getUser().email)
+            setUsername("")
+            setEmail("")
         }
         window.addEventListener("scroll", function(){
             if (document.getElementById("nav-bar")) {

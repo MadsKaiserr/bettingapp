@@ -4,7 +4,7 @@ const withAuth = Component => {
     const Auth = (props) => {
         const isLoggedIn = false;
         if (getUser()) {
-            if (getUser().email) {
+            if ("") {
                 isLoggedIn = true;
             }
         }

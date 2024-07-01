@@ -36,8 +36,8 @@ function StageForside ({gruppespil_data, spiller_data}) {
         }
 
         const requestBody = {
-            email: getUser().email,
-            navn: getUser().username,
+            email: "",
+            navn: "",
             besked: feedbackText,
             box: feedbackBox
         }
@@ -482,7 +482,7 @@ function StageForside ({gruppespil_data, spiller_data}) {
                         placeBetBTN.innerHTML = "Placér bet";
                     } else {
                         const placeBetUrl = "https://1ponivn4w3.execute-api.eu-central-1.amazonaws.com/api/bet";
-                        const userEmail = getUser().email;
+                        const userEmail = "";
                 
                         const betConfig = {
                             headers: {
@@ -605,7 +605,7 @@ function StageForside ({gruppespil_data, spiller_data}) {
                         placeBetBTN.innerHTML = "Placér bet";
                     } else {
                         const placeBetUrl = "https://1ponivn4w3.execute-api.eu-central-1.amazonaws.com/api/bet";
-                const userEmail = getUser().email;
+                const userEmail = "";
         
                 const betConfig = {
                     headers: {
@@ -1014,7 +1014,7 @@ function StageForside ({gruppespil_data, spiller_data}) {
             setSlutdato(gruppespil_data.varighed);
 
             for (var k in gruppespil_data.players) {
-                if (gruppespil_data.players[k].player === getUser().email) {
+                if (gruppespil_data.players[k].player === "") {
                     localStorage.setItem("notifikationer", gruppespil_data.players[k].info.notifikationer.length);
                 }
                 for (var l in gruppespil_data.players[k].odds) {
@@ -1051,7 +1051,7 @@ function StageForside ({gruppespil_data, spiller_data}) {
             weekCount = weekCount / 1000 / 60 / 60 / 24 / 7;
             var topScorers = getTopN(gruppespil_data.players, n);
             topScorers.forEach(function(gameItem, index) {
-                if (gameItem.player === getUser().email) {
+                if (gameItem.player === "") {
                     if (Math.floor(weekCount) <= gruppespil_data.indskydelse_int) {
                         setCurrentMoney(gameItem.info.money)
                     }
@@ -1079,7 +1079,7 @@ function StageForside ({gruppespil_data, spiller_data}) {
                 axios.patch(betCalcURL, winBody, requestConfig).then(responseTem => {
                     console.log("AWS - Indskydelse:", responseTem, winBody);
                     for (var i in responseTem.data.Item.Attributes.players) {
-                        if (responseTem.data.Item.Attributes.players[i].player === getUser().email) {
+                        if (responseTem.data.Item.Attributes.players[i].player === "") {
                             setCurrentMoney(responseTem.players[i].info.money);
                         }
                     }
@@ -2923,7 +2923,7 @@ function StageForside ({gruppespil_data, spiller_data}) {
             }
     
             const requestBody2 = {
-                email: getUser().email,
+                email: "",
                 code: (ec1 + "") + (ec2 + "") + (ec3 + "") + (ec4 + "") + (ec5 + "") + (ec6 + "")
             }
     
@@ -2976,7 +2976,7 @@ function StageForside ({gruppespil_data, spiller_data}) {
             }
     
             const requestBody2 = {
-                email: getUser().email
+                email: ""
             }
     
             axios.post(loginURL2, requestBody2, requestConfig2).then(response => {

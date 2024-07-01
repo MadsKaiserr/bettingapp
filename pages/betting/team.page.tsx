@@ -251,7 +251,7 @@ function StageTeam () {
     
                         const requestBody = {
                             "data": storage,
-                            "email": getUser() ? getUser().email : ""
+                            "email": ""
                         }
                         axios.post(signupURL, requestBody, requestConfig).then(response => {
                             console.log("AWS - Favoritter:", response);
@@ -279,7 +279,7 @@ function StageTeam () {
     
                         const requestBody = {
                             "data": storageDiv,
-                            "email": getUser() ? getUser().email : ""
+                            "email": ""
                         }
                         axios.post(signupURL, requestBody, requestConfig).then(response => {
                             console.log("AWS - Favoritter:", response);
@@ -308,7 +308,7 @@ function StageTeam () {
     
                         const requestBody = {
                             "data": storage,
-                            "email": getUser() ? getUser().email : ""
+                            "email": ""
                         }
                         axios.post(signupURL, requestBody, requestConfig).then(response => {
                             console.log("AWS - Favoritter:", response);
