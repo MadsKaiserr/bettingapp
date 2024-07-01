@@ -274,7 +274,7 @@ function Betting({gruppespil_data, spiller_data}) {
 
     //Auth, aktivt spil og odds
     useEffect(() => {
-        setAuth(getUser());
+        // setAuth(getUser());
         if (cookie.get("activeGame")) {
             setActiveGame(true);
         }
