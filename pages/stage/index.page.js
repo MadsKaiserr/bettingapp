@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import axios from "axios";
-import { getUser, resetUserSession } from "../services/authService";
+import { getUser } from "../services/authService";
+// import { getUser, resetUserSession } from "../services/authService";
 import { getKupon, getString } from "../services/algo.js";
 import { DayPicker } from 'react-day-picker';
 import da from 'date-fns/locale/da';
@@ -966,7 +967,7 @@ function StageForside ({gruppespil_data, spiller_data}) {
     }
 
     function logout() {
-        resetUserSession();
+        // resetUserSession();
         window.open("/", "_self");
     }
 

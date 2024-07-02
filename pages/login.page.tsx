@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import axios from "axios";
-import resetUserSession from "./services/authService";
-import setUserSession from "./services/authService";
+// import resetUserSession from "./services/authService";
+// import setUserSession from "./services/authService";
 import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -77,7 +77,7 @@ function Login () {
 
         axios.post(loginURL, requestBody, requestConfig).then(response => {
             console.log("AWS - Login:", response);
-            setUserSession(response.data.user, response.data.token);
+            // setUserSession(response.data.user, response.data.token);
             router.push("/betting");
         }).catch(error => {
             console.log(error);
@@ -114,7 +114,7 @@ function Login () {
     
             axios.post(loginURL, requestBody, requestConfig).then(response => {
                 console.log("AWS - Login:", response);
-                setUserSession(response.data.user, response.data.token);
+                // setUserSession(response.data.user, response.data.token);
                 cookie.set("fbLogin", JSON.stringify(event), {expires: 7})
                 if (response.data.user.type === "facebook") {
                     if (!response.data.user.fb_logo_id) {

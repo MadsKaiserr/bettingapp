@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import axios from "axios";
-import resetUserSession from "./services/authService";
-import setUserSession from "./services/authService";
+// import resetUserSession from "./services/authService";
+// import setUserSession from "./services/authService";
 import Link from 'next/link'
 import Head from 'next/head'
 import signupStyles from './css/modules/sider/signup.module.css';
@@ -221,7 +221,7 @@ function Signup () {
 
         axios.post(signupURL, requestBody, requestConfig).then(response => {
             console.log("AWS - Opret konto:", response);
-            resetUserSession();
+            // resetUserSession();
 
             const loginURL = "https://1ponivn4w3.execute-api.eu-central-1.amazonaws.com/api/login";
             const loginConfig = {
@@ -239,7 +239,7 @@ function Signup () {
     
             axios.post(loginURL, loginBody, loginConfig).then(response => {
                 console.log("AWS - Login:", response);
-                setUserSession(response.data.user, response.data.token);
+                // setUserSession(response.data.user, response.data.token);
                 setOprettet(true)
                 setEmailState("oprettet")
                 window.scrollTo(0, 0)
@@ -308,7 +308,7 @@ function Signup () {
                 var signupURL;
                 axios.post(signupURL, requestBody, requestConfig).then(response => {
                     console.log("AWS - Opret konto:", response);
-                    resetUserSession();
+                    // resetUserSession();
 
                     const loginURL = "https://1ponivn4w3.execute-api.eu-central-1.amazonaws.com/api/login";
                     const loginConfig = {
@@ -325,7 +325,7 @@ function Signup () {
                     axios.post(loginURL, loginBody, loginConfig).then(response => {
                         console.log("AWS - Login:", response);
                         cookie.set("fbLogin", fbEvent, {expires: 7})
-                        setUserSession(response.data.user, response.data.token);
+                        // setUserSession(response.data.user, response.data.token);
                         document.getElementById("info1").classList.add("display-not");
                         document.getElementById("info2").classList.remove("display-not");
                         window.scrollTo(0, 0)

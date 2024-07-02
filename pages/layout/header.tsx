@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
 import { getUser } from "../services/authService";
-import resetUserSession from "../services/authService";
+// import resetUserSession from "../services/authService";
 import cookie from 'js-cookie'
 
 import Spillemyndigheden from '../assets/img/spillemyndighed.png';
@@ -36,7 +36,7 @@ function Header () {
     }, [])
 
     function logout() {
-        resetUserSession();
+        // resetUserSession();
         window.open("/", "_self");
     }
 
